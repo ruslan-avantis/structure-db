@@ -12,30 +12,33 @@
 
 ## База / таблицы
 ### Список основных таблиц
-- `user`
-- `user_data` - данные пользователя
-- `cart`
-- `order`
-- `pay`
-- `product`
-- `property`
+- `config` - Конфигурация системы
+- `user` - Пользователи
+- `user_data` - Данные пользователя
+- `cart` - Корзина
+- `order` - Заказы
+- `pay` - Платежи
+- `product` - Товары
+- `property` - Свойства
 - `address` - Адреса
 - `location` - База адресов
-- или мелкими таблицами
+- Или мелкими таблицами
 - `location_country` - Страна
 - `location_region` - Область (регион)
 - `location_city` - Город (населенный пункт)
 - `location_district` - Район города
 - `location_street` - Улица
 ### Список основных дополнительных таблиц
-- `test`
-### Поля в таблицах
+- `test` - Тестовая таблица
+### Таблицы с полями
 #### user
-- `id`
+- `id` (integer)
+- `user_data_id`(integer)
 #### user_data
-- `id`
+- `id`(integer)
+- `user_id`(integer)
 #### config
-- `id`
+- `id`(integer)
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
