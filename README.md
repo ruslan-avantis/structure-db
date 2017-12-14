@@ -32,13 +32,13 @@
 - `test` - Тестовая таблица
 ### Таблицы с полями
 #### user
-- `id` (integer)
-- `user_data_id`(integer)
+- `id` - integer
+- `user_data_id` - integer
 #### user_data
-- `id`(integer)
-- `user_id`(integer)
+- `id` - integer
+- `user_id` - integer
 #### config
-- `id`(integer)
+- `id` - integer
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
