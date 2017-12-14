@@ -41,7 +41,7 @@
 - `email` - string - Email пользователя проверяется `filter_var($email, FILTER_VALIDATE_EMAIL);`
 - `phone` - string - Телефон пользователя в международном формате `без +` `380670000001` сначала очищается `\Pllano\ApiShop\Core\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
 - `language` - string - Язык выбранный пользователем (по умолчанию ru) также хранится в `$session->language`
-- `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
+- `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption). Для того чтобы усложнить подмену cookie и убрать лишние запросы к базе. Сначала пробуем расшифровать cookie. Если не можем расшифровать, значит идет подмена cookie. Отказываем в доступе и записываем IP адрес в черный список при повторении блокируем.
 #### user_data
 - `id` - integer
 - `alias` - string - второй id в виде 12 случайных символов созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();`
