@@ -33,7 +33,7 @@
 ### Поля таблиц
 #### user
 - `id` - integer - id пользователя
-- `alias` - string - Второй id в виде 12 случайных символов созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` (Пример: 2fd4f3fbd83f)
+- `alias` - string - Второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `user_data_id` - integer - id данных пользователя
 - `role` - integer - Роль пользователя по умолчанию `role=1` (покупатель)
 - `login` - string - Логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
@@ -44,11 +44,11 @@
 - `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption). Для того чтобы усложнить подмену cookie и убрать лишние запросы к базе. Сначала пробуем расшифровать cookie. Если не можем расшифровать, значит идет подмена cookie. Отказываем в доступе и записываем IP адрес в черный список при повторении блокируем.
 #### user_data
 - `id` - integer
-- `alias` - string - второй id в виде 12 случайных символов созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();`
+- `alias` - string - Второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `user_id` - integer
 #### config
 - `id` - integer
-- `alias` - string - второй id в виде 12 случайных созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();`
+- `alias` - string - Второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
