@@ -39,7 +39,7 @@
 - `login` - string - Логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
 - `password` - string - Хеш пароля созданный `password_hash` проверяется `password_verify`
 - `email` - string - Email пользователя проверяется `filter_var($email, FILTER_VALIDATE_EMAIL);`
-- `phone` - string - Телефон пользователя без + в международном формате `380670000001` сначала очищается `\Pllano\ApiShop\Core\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
+- `phone` - string - Телефон пользователя в международном формате `без +` `380670000001` сначала очищается `\Pllano\ApiShop\Core\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
 - `language` - string - Язык выбранный пользователем (по умолчанию ru) также хранится в `$session->language`
 - `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
 #### user_data
