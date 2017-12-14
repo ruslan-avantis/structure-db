@@ -1,6 +1,12 @@
 # db.json - Структуры базы данных
 Мы вывели структуру базы данных для [API Shop](https://github.com/pllano/api-shop), [api-json-db](https://github.com/pllano/api-json-db), [APIS-2018](https://github.com/pllano/APIS-2018/) в отдельный репозиторий.
 
+### Поддерживаемые типы данных в db.json
+- `boolean` — Логический тип `true` или `false`
+- `integer` — Целое число	
+- `string` — Строковый тип
+- `double` — Число с плавающей точкой
+
 ## Шаблоны
 Предлагайте свои варинаты структуры базы данных
 
