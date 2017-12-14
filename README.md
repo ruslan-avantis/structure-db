@@ -33,22 +33,22 @@
 ### Поля таблиц
 #### user
 - `id` - integer - id пользователя
-- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Db::random_alias_id();`
+- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Utility::random_alias_id();`
 - `user_data_id` - integer - id данных пользователя
 - `role` - integer - роль пользователя по умолчанию `role=1` (покупатель)
 - `login` - string - логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
 - `password` - string - хеш пароля созданный `password_hash` проверяется `password_verify`
 - `email` - string - email пользователя проверяется `filter_var($email, FILTER_VALIDATE_EMAIL);`
-- `phone` - string - телефон пользователя без + в международном формате `380670000001` сначала очищается `\jsonDB\Db::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
-- `language` - string - язык выбранный пользователем по умолчанию ru
+- `phone` - string - телефон пользователя без + в международном формате `380670000001` сначала очищается `\jsonDB\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
+- `language` - string - язык выбранный пользователем по умолчанию ru также хранится в 
 - `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
 #### user_data
 - `id` - integer
-- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Db::random_alias_id();`
+- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Utility::random_alias_id();`
 - `user_id` - integer
 #### config
 - `id` - integer
-- `alias` - string - второй id в виде 12 случайных созданный `\jsonDB\Db::random_alias_id();`
+- `alias` - string - второй id в виде 12 случайных созданный `\jsonDB\Utility::random_alias_id();`
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
