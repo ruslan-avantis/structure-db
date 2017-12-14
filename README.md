@@ -41,7 +41,7 @@
 - `email` - string - email пользователя
 - `phone` - string - телефон пользователя без + в международном формате `380670000001`
 - `language` - string - язык выбранный пользователем по умолчанию ru
-- `cookie` - string - Cookies пользователя установленные setcookie зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
+- `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
 #### user_data
 - `id` - integer
 - `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Db::random_alias_id();`
