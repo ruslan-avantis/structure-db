@@ -33,22 +33,22 @@
 ### Поля таблиц
 #### user
 - `id` - integer - id пользователя
-- `alias` - string - Второй id в виде 12 случайных символов созданный `\jsonDB\Utility::random_alias_id();` (Пример: 2fd4f3fbd83f)
+- `alias` - string - Второй id в виде 12 случайных символов созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` (Пример: 2fd4f3fbd83f)
 - `user_data_id` - integer - id данных пользователя
 - `role` - integer - Роль пользователя по умолчанию `role=1` (покупатель)
 - `login` - string - Логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
 - `password` - string - Хеш пароля созданный `password_hash` проверяется `password_verify`
 - `email` - string - Email пользователя проверяется `filter_var($email, FILTER_VALIDATE_EMAIL);`
-- `phone` - string - Телефон пользователя без + в международном формате `380670000001` сначала очищается `\jsonDB\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
+- `phone` - string - Телефон пользователя без + в международном формате `380670000001` сначала очищается `\Pllano\ApiShop\Core\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);`
 - `language` - string - Язык выбранный пользователем (по умолчанию ru) также хранится в `$session->language`
 - `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
 #### user_data
 - `id` - integer
-- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Utility::random_alias_id();`
+- `alias` - string - второй id в виде 12 случайных символов созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();`
 - `user_id` - integer
 #### config
 - `id` - integer
-- `alias` - string - второй id в виде 12 случайных созданный `\jsonDB\Utility::random_alias_id();`
+- `alias` - string - второй id в виде 12 случайных созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();`
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
