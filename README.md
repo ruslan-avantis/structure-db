@@ -32,13 +32,23 @@
 - `test` - Тестовая таблица
 ### Поля таблиц
 #### user
-- `id` - integer
-- `user_data_id` - integer
+- `id` - integer - id пользователя
+- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Db::random_alias_id();`
+- `user_data_id` - integer - id данных пользователя
+- `role` - integer - роль пользователя по умолчанию `role=1` (покупатель)
+- `login` - string - логин пользователя (может не использоватся)
+- `password` - string - хеш пароля созданный `password_hash` проверяется `password_verify`
+- `email` - string - email пользователя
+- `phone` - string - телефон пользователя без + в международном формате `380670000001`
+- `language` - string - язык выбранный пользователем по умолчанию ru
+- `cookie` - string - Cookies пользователя установленные setcookie зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption)
 #### user_data
 - `id` - integer
+- `alias` - string - второй id в виде 12 случайных символов созданный `\jsonDB\Db::random_alias_id();`
 - `user_id` - integer
 #### config
 - `id` - integer
+- `alias` - string - второй id в виде 12 случайных созданный `\jsonDB\Db::random_alias_id();`
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
