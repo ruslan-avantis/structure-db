@@ -134,7 +134,7 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`supplier_currency`](https://github.com/pllano/db.json/blob/master/db/supplier_currency.md) - Курсы валют поставщиков
 - [`supplier_account`](https://github.com/pllano/db.json/blob/master/db/supplier_account.md) - Юр. лица поставщиков (связь с таблицей account)
 #### Свойства
-- [`product_property`](https://github.com/pllano/db.json/blob/master/db/product_property.md) - Свойства товара
+- [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
 - [`property`](https://github.com/pllano/db.json/blob/master/db/property.md) - Настройки и связи набора и списка свойств
 - [`property_set`](https://github.com/pllano/db.json/blob/master/db/property_set.md) - Наборы свойств
 - [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
