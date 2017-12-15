@@ -185,7 +185,7 @@ if (file_exists("db.json")){
                                 return;
                             }
                               } else {
-                                  echo "key не прошол проверку preg_match [a-z0-9_]";
+                                  echo "key не прошел проверку preg_match [a-z0-9_]";
                                   return;
                               }
                         } else {
@@ -216,7 +216,7 @@ if (file_exists("db.json")){
         return;
     }
 } else {
-    echo "Файл db.json не доступен";
+    echo "По указанному пути Файл db.json не найден";
     return;
 }
 ```
