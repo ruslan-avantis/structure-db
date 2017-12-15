@@ -3,6 +3,7 @@
 - `id` - integer - в других таблицах `site_id`
 - `state` - integer - Выкл. = 0 или Вкл. = 1
 - `authorize` - integer - доступный всем 0 или только зарегестрированным 1
+- `cookie_consent` - string - Согласие с cookie. По умолчанию 0
 - `http_protocol` - string - по умолчанию `https`
 - `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
 - `uri` - string - URL сайта в формате `example.com`
@@ -19,5 +20,9 @@
 - `country_id` - integer - код страны. По умолчанию `1` = `UA`
 - `currency_id` - integer - валюта. По умолчанию `1` = `UAH`, `грн.`
 - `prefix_invoice` - string - Префикс в счетах. По умолчанию `APISHOP_`
+- `vat_tax` - double - НДС в счетах. По умолчанию 0.00 `%`
 - `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
  
+## На рассмотрении
+- `api_key` - string - Ключ доступа к API. Генерируется автоматически.
+- `crypt_key` - string - Ключ шифрования API. Генерируется автоматически.
