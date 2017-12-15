@@ -78,7 +78,7 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
 #### Конфигурация продавца
 - [`seller`](https://github.com/pllano/db.json/blob/master/db/seller.md) - Конфигурация продавца
-#### Тикет система - Связь с покупателем
+#### Тикет система - Связь
 - [`ticket`](https://github.com/pllano/db.json/blob/master/db/ticket.md) - Основная таблица тикет системы
 - [`ticket_category`](https://github.com/pllano/db.json/blob/master/db/ticket_category.md) - Категории тикетов
 - [`ticket_status`](https://github.com/pllano/db.json/blob/master/db/ticket_status.md) - Статусы и связи тикетов
