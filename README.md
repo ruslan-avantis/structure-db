@@ -154,7 +154,7 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - `jhbg5r_login` - Поле `login`
 
 ### Использование в MySql
-#### Создаем таблицы в MySQL
+#### Пример скрипта на PHP для создания таблиц в базе MySQL из файла [db.json](https://github.com/pllano/db.json/blob/master/db.json)
 ```php
 $uri_db = "db.json";
 if (file_exists($uri_db)){
