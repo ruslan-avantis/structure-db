@@ -156,40 +156,40 @@ if (file_exists('db.json')){
     // Загрузить файл db.json
     $db = json_decode(file_get_contents('db.json'), true);
     $count = count($db_json);
-    
+ 
     if ($count >= 1) {
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
             or die("Ошибка " . mysqli_error($link));
-
+ 
         foreach($db as $unit){
             // Если существует поле table
-            if (isset($unit["table"])) {
-                if ($unit["action"] == 'create') {
-                    $unitCount = count($unit["schema"]);
-                    if ($unitCount >= 1) {
-                        $row = "";
-                        $value = "";
-                         foreach($unit["schema"] as $key => $value){
-                            if (isset($key) && isset($value)) {
-                                if ($key != "id") {
-                                    // Конвертируем тип
-                                    $value = str_replace("boolean", "CHAR( 5 ) NOT NULL", $value);
-                                    $value = str_replace("string", "VARCHAR( 255 ) NOT NULL", $value);
-                                    $value = str_replace("integer", "INT( 11 ) NOT NULL", $value);
-                                    $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
-                                    $row .= ", ".$key." ".$value;
-                                }
+            if (isset($unit["table"]) && $unit["action"] == "create") {
+                if (count($unit["schema"]) >= 1) {
+                    $row = "";
+                    $value = "";
+                    
+                    foreach($unit["schema"] as $key => $value){
+                        if (isset($key) && isset($value)) {
+                            if ($key != "id") {
+                                // Конвертируем тип
+                                $value = str_replace("boolean", "CHAR( 5 ) NOT NULL", $value);
+                                $value = str_replace("string", "VARCHAR( 255 ) NOT NULL", $value);
+                                $value = str_replace("integer", "INT( 11 ) NOT NULL", $value);
+                                $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
+                                $row .= ", ".$key." ".$value;
                             }
                         }
-                            // Формируем запрос
-                            $query ="CREATE Table ".$unit["table"]."(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY".$row.")";
-                            // Отправляем запрос
-                            $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                     }
+  
+					// Формируем запрос
+                    $query ="CREATE Table ".$unit["table"]."(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY".$row.")";
+                    // Отправляем запрос
+                    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 }
             }
         }
+ 
         // Закрываем соединение с БД
         mysqli_close($link);
         echo "Создание таблиц прошло успешно";
