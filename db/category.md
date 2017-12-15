@@ -7,9 +7,9 @@
 - `sort` - integer - Сортировка
 - `authorize` - integer - доступный всем 0 или только зарегестрированным 1
 - `only_available` - integer - =0 выводить все товары, =1 выводить только с наличия
+- `products_limit` - integer - Товаров на страницу. По умолчанию 15
 - `categories_template` - string - Шаблон категории. По умолчанию default
 - `products_template` - string - Шаблон карточки товара в списке товаров. По умолчанию default
-- `products_limit` - integer - Товаров на страницу. По умолчанию 15
 - `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
 - `canonical` - string - выводится `<link name="canonical" content="">`
 - `name` - string - заглавие `<h1></h1>`
@@ -42,9 +42,9 @@
 "sort": "integer",
 "authorize": "integer",
 "only_available": "integer",
+"products_limit": "integer",
 "categories_template": "string",
 "products_template": "string",
-"products_limit": "integer",
 "robots": "string",
 "canonical": "string",
 "name": "string",
