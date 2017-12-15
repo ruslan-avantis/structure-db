@@ -163,12 +163,12 @@ if (file_exists("db.json")){
         $link = mysqli_connect($host, $user, $password, $database)
             or die("Ошибка " . mysqli_error($link));
  
-        foreach($db as $unit){
+        foreach($db as $table){
             // Если существует поле table
-            if (isset($unit["table"])) {
-                if (count($unit["schema"]) >= 1 && $unit["action"] == "create") {
+            if (isset($table["table"])) {
+                if (count($table["schema"]) >= 1 && $table["action"] == "create") {
                     $row = ""; 
-                    foreach($unit["schema"] as $key => $value){
+                    foreach($table["schema"] as $key => $value){
                         if (isset($key) && isset($value)) {
                             if ($key != "id") {
                                 // Конвертируем тип
@@ -181,7 +181,7 @@ if (file_exists("db.json")){
                         }
                     }
                     // Формируем запрос
-                    $query ="CREATE Table ".$unit["table"]."(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY".$row.")";
+                    $query ="CREATE Table ".$table["table"]."(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY".$row.")";
                     // Отправляем запрос
                     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 }
