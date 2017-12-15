@@ -10,8 +10,6 @@
 - `products_limit` - integer - Товаров на страницу. По умолчанию 15
 - `categories_template` - string - Шаблон категории. По умолчанию default
 - `products_template` - string - Шаблон карточки товара в списке товаров. По умолчанию default
-- `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
-- `canonical` - string - выводится `<link name="canonical" content="">`
 - `name` - string - заглавие `<h1></h1>`
 - `title` - string - выводится `<title></title>`
 - `keywords` - string - выводится `<meta name="keywords" content="">`
@@ -19,6 +17,8 @@
 - `image` - string - картинка категории
 - `text` - string - описания категории
 - `note` - string - краткое описания категории
+- `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
+- `canonical` - string - выводится `<link name="canonical" content="">`
 - `seo_h1` - string - заменит автоматически сгенерированный
 - `seo_title` - string - заменит автоматически сгенерированный
 - `seo_keywords` - string - заменит автоматически сгенерированный
@@ -45,8 +45,6 @@
 "products_limit": "integer",
 "categories_template": "string",
 "products_template": "string",
-"robots": "string",
-"canonical": "string",
 "name": "string",
 "title": "string",
 "keywords": "string",
@@ -54,6 +52,8 @@
 "image": "string",
 "text": "string",
 "note": "string",
+"robots": "string",
+"canonical": "string",
 "seo_h1": "string",
 "seo_title": "string",
 "seo_keywords": "string",
