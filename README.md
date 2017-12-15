@@ -200,9 +200,7 @@ if (file_exists('db.json')){
 
 Пишите нам на почту open.source@pllano.com
 
-Вы можете оставлять свои предложения и пожелания, или вы нашли баг в db.json загляните в
-[issues](https://github.com/pllano/db.json/issues), возможно, про него мы уже знаем и
-скоро исправим. Если нет, лучше всего сообщить о нём там.
+Вы можете оставлять свои предложения и пожелания в [issues](https://github.com/pllano/db.json/issues), или вы нашли баг в db.json загляните в [issues](https://github.com/pllano/db.json/issues), возможно, про него мы уже знаем и скоро исправим. Если нет, лучше всего сообщить о нём там.
 
 За новостями вы можете следить по
 [коммитам](https://github.com/pllano/db.json/commits/master) в этом репозитории.
