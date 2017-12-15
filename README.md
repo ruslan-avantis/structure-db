@@ -182,7 +182,7 @@ if (file_exists($uri_db)){
                                 $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
                                 $row .= ", ".$key." ".$value;
                             } else {
-                                echo "key и value не определены";
+                                echo "название поля или тип данных не определены";
                                 return;
                             }
                               } else {
