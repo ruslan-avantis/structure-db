@@ -170,13 +170,15 @@ if (file_exists("db.json")){
                     $row = ""; 
                     foreach($table["schema"] as $key => $value){
                         if (isset($key) && isset($value)) {
-                            if ($key != "id") {
+                            if ($key != "id" && preg_match("[a-z0-9_]", $key)) {
+                            if ($value == "boolean" || $value == "string" || $value == "integer" || $value == "double") {
                                 // Конвертируем тип
                                 $value = str_replace("boolean", "CHAR( 5 ) NOT NULL", $value);
                                 $value = str_replace("string", "VARCHAR( 255 ) NOT NULL", $value);
                                 $value = str_replace("integer", "INT( 11 ) NOT NULL", $value);
                                 $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
                                 $row .= ", ".$key." ".$value;
+                            }
                             }
                         }
                     }
