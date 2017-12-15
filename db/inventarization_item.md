@@ -1,0 +1,1 @@
+# inventarization_item
