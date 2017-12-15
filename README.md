@@ -22,15 +22,14 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 ## База / таблицы
 ### Список основных таблиц
 #### Глобальные
-- `site` - Конфигурация сайта
-- `currency` - Валюты
-- `language` - Мультиязычность
-- `category` - Категории
-- `menu` - Меню
-
-- `account` - Счета
-- `corporation` - Юридические лица
-- `delivery` - Способы доставки
+- [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Мультисайтовость
+- [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
+- [`currency`](https://github.com/pllano/db.json/blob/master/db/currency.md) - Валюты
+- [`category`](https://github.com/pllano/db.json/blob/master/db/category.md) - Категории
+- [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
+- [`account`](https://github.com/pllano/db.json/blob/master/db/account.md) - Счета
+- [`corporation`](https://github.com/pllano/db.json/blob/master/db/corporation.md) - Юридические лица
+- [`delivery`](https://github.com/pllano/db.json/blob/master/db/delivery.md) - Способы доставки
 #### Пользователи
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи 
 - [`user_data`](https://github.com/pllano/db.json/blob/master/db/user_data.md) - Данные пользователя
@@ -148,66 +147,12 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 ## Таблицы - детализация
 ### Свойства
 Наша структура свойств показала себя очень хорошо при высоких нагрузках и большой посещаемости
-#### `product_property` - Свойства товаров
-Мы думаем над тем чтобы эту таблицу сделать двухуровневую id=product_id `{"product_id":1212, "value":[arr]}` это ускорит скорость работы в несколько раз.
-- `id` - integer - id
-- `product_id` - integer - id товара
-- `property_id` - integer - id свойства
-- `property_value_id` - integer - id значения
-- `value` - string - значение
-- `individual` - string - индивидуальное значение
-- `state` - integer - id
-#### `property` - Связи набора и списка свойств а также настройки 
-- `id` - integer - id
-- `property_set_id` - integer - связь с таблицей `property_set`
-- `property_list_id` - integer - связь с таблицей `property_list`
-- `sort` - integer
-- `filter` - integer
-- `multi` - integer
-- `empty` - integer
-- `view` - integer
-- `short` - integer
-- `primary` - integer
-- `secondary` - integer
-- `multiadmin` - integer
-- `other` - integer
-- `other_same` - integer
-- `same` - integer
-- `seo` - integer
-- `mod` - integer
-- `mod_view` - integer
-#### `property_set` - Наборы свойств
-- `id` - integer - id
-- `name` - string - Название набора свойств
-#### `property_list` - Список свойств
-- `id` - integer - id
-- `name` - string - Название свойства
-- `name_set` - string - Название в наборе
-- `name_filter` - string - Название в фильтрах
-- `name_product` - string - Название в товаре
-- `name_other` - string - Название в других
-#### `property_value` - Значения свойств
-- `id` - integer - id
-- `value` - string - Значение свойства
-- `seo` - string - Название для SEO
-- `description` - string - Описание значения
-- `unit` - string - ENUM (`'-'`,`'см'`,`'м'`,`'кг'`,`'г'`,`'мм'`,`'MGz'`,`'Mb'`)
-- `image` - string - Картинка значения
-- `alias` - string - Алиас значения
-- `sort` - integer - Сортировка
-- `state` - integer - Активный: 1 или 0
-### Пользователь
-#### user
-- `id` - integer - id пользователя
-- `alias_id` - string - Второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
-- `role_id` - integer - Роль пользователя по умолчанию `role=1` (покупатель)
-- `login` - string - Логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
-- `password` - string - Хеш пароля созданный `password_hash` проверяется `password_verify`
-- `email` - string - Email пользователя проверяется `filter_var($email, FILTER_VALIDATE_EMAIL);` при желании можно шифровать с помощью [defuse/php-encryption](https://github.com/defuse/php-encryption)
-- `phone` - string - Телефон пользователя в международном формате `без +` `380670000001` сначала очищается `\Pllano\ApiShop\Core\Utility::phone_clean();`  потом проверяется `preg_match("/^[\+0-9\-\(\)\s]*$/", $phone);` при желании можно шифровать с помощью [defuse/php-encryption](https://github.com/defuse/php-encryption)
-- `language` - string - Язык выбранный пользователем (по умолчанию ru) также хранится в `$session->language`
-- `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption). Для того чтобы усложнить подмену cookie и убрать лишние запросы к базе. Сначала пробуем расшифровать cookie. Если не можем расшифровать, значит идет подмена cookie. Отказываем в доступе и записываем IP адрес в черный список при повторении блокируем.
-- `state` - Статус 1 активный или 0 неактивный
+
+
+
+
+
+
 #### user_data - Таблица личных данных пользователей.
 Эту таблицу при желании можно шифровать полностью
 - `id` - integer
