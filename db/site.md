@@ -7,7 +7,7 @@
 - `http_protocol` - string - по умолчанию `https`
 - `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
 - `uri` - string - URL сайта в формате `example.com`
-- `name` - string - внутреннее название сайта `<h1></h1>`
+- `name` - string - заглавие сайта `<h1></h1>`
 - `title` - string - выводится `<title></title>`
 - `keywords` - string - выводится `<meta name="keywords" content="">`
 - `description` - string - выводится `<meta name="description" content="">`
