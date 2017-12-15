@@ -163,7 +163,7 @@ if (file_exists($uri_db)){
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database) or die("Ошибка " . mysqli_error($link));
         if (!$link) {exit;}
-	
+    
         foreach($db as $table){
             // Если существует поле table
             if (isset($table["table"])) {
@@ -190,20 +190,20 @@ if (file_exists($uri_db)){
                             echo "value у ".$key." должен иметь один из типов: boolean, string, integer, double";
                         }
                     }
-					
-					if (!mysql_query("SELECT * FROM `".$table["table"]."`")){
+                    
+                    if (!mysql_query("SELECT * FROM `".$table["table"]."`")){
                         // Создаем таблицу
                         $query ="CREATE TABLE IF NOT EXISTS ".$table["table"]."(
                             id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY".$row."
-							)";
-					} else {
-					    // Обновляем существующую таблицу
-					    $query ="ALTER TABLE ".$table["table"]." 
-						    CHANGE id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY".$row;
-					}
+                            )";
+                    } else {
+                        // Обновляем существующую таблицу
+                        $query ="ALTER TABLE ".$table["table"]." 
+                            CHANGE id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY".$row;
+                    }
                     // Отправляем запрос
                     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-					
+                    
                 } else {
                     echo "У ".$table["table"]." отсутствует schema или action != create";
                 }
@@ -214,7 +214,7 @@ if (file_exists($uri_db)){
         // Закрываем соединение с БД
         mysqli_close($link);
         echo "Создание таблиц прошло успешно";
-	return true;
+    return true;
     } else {
         echo "Таблицы в файле db.json не найдены";
         return false;
