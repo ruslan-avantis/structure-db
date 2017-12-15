@@ -162,6 +162,7 @@ if (file_exists("db.json")){
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
             or die("Ошибка " . mysqli_error($link));
+			return;
  
         foreach($db as $table){
             // Если существует поле table
@@ -198,7 +199,13 @@ if (file_exists("db.json")){
                     )";
                     // Отправляем запрос
                     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+                } else {
+                    echo "Отсутствует schema или action != create";
+                    return;
                 }
+            } else {
+                echo "Название одной из таблиц не определено";
+                return;
             }
         }
         // Закрываем соединение с БД
