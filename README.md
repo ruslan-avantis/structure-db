@@ -37,11 +37,12 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`corporation`](https://github.com/pllano/db.json/blob/master/db/corporation.md) - Юридические лица
 - [`delivery`](https://github.com/pllano/db.json/blob/master/db/delivery.md) - Способы доставки
 #### Пользователи
+- [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи 
 - [`user_data`](https://github.com/pllano/db.json/blob/master/db/user_data.md) - Данные пользователя
-- [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
-- [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса пользователей системы
-- [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Контактные лица (поставщиков итд.)
+- [`contact`](https://github.com/pllano/db.json/blob/master/db/contact.md) - Контактные данные
+- [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
+- [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Контактные лица
 #### Корзина
 - [`cart`](https://github.com/pllano/db.json/blob/master/db/cart.md) - Корзина
 - [`order`](https://github.com/pllano/db.json/blob/master/db/order.md) - Заказы
@@ -73,8 +74,8 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`error`](https://github.com/pllano/db.json/blob/master/db/error.md) - Лог ошибок
 - [`redirect`](https://github.com/pllano/db.json/blob/master/db/redirect.md) - Редиректы
 #### Контент
-- [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
 - [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
+- [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
 #### Конфигурация продавца
 - [`seller`](https://github.com/pllano/db.json/blob/master/db/seller.md) - Конфигурация продавца
 #### Тикет система - Связь с покупателем
@@ -88,7 +89,6 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`subscription`](https://github.com/pllano/db.json/blob/master/db/subscription.md) - Подписки на рассылки
 - [`sending`](https://github.com/pllano/db.json/blob/master/db/sending.md) - Рассылки
 - [`sending_set`](https://github.com/pllano/db.json/blob/master/db/sending_set.md) - Настройки рассылок
-- [`sending_contact`](https://github.com/pllano/db.json/blob/master/db/sending_contact.md) - Контакты
 - [`sending_statistic`](https://github.com/pllano/db.json/blob/master/db/sending_statistic.md) - Статистика рассылок
 #### Боты и машинное обучение
 - [`bot`](https://github.com/pllano/db.json/blob/master/db/bot.md) - Типы и настройки ботов
