@@ -155,9 +155,9 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 ### Использование в MySql
 #### Создаем таблицы в MySQL
 ```php
-if (file_exists('db.json')){
+if (file_exists("db.json")){
     // Загрузить файл db.json
-    $db = json_decode(file_get_contents('db.json'), true);
+    $db = json_decode(file_get_contents("db.json"), true);
     if (count($db) >= 1) {
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
