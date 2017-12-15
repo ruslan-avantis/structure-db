@@ -1,0 +1,19 @@
+# `property` - Связи набора и списка свойств а также настройки 
+- `id` - integer - id
+- `property_set_id` - integer - связь с таблицей `property_set`
+- `property_list_id` - integer - связь с таблицей `property_list`
+- `sort` - integer
+- `filter` - integer
+- `multi` - integer
+- `empty` - integer
+- `view` - integer
+- `short` - integer
+- `primary` - integer
+- `secondary` - integer
+- `multiadmin` - integer
+- `other` - integer
+- `other_same` - integer
+- `same` - integer
+- `seo` - integer
+- `mod` - integer
+- `mod_view` - integer
