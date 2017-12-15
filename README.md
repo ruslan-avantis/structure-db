@@ -20,7 +20,6 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - `jhbg5r_login` - Поле `login`
 
 ## База / таблицы
-### Список основных таблиц
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Мультисайтовость
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
@@ -134,8 +133,9 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
 - [`property_value`](https://github.com/pllano/db.json/blob/master/db/property_value.md) - Значения свойств
 #### Адреса
+- База адресов может быть покупная или собираемая автоматически в процессе работы сайта
 - [`location`](https://github.com/pllano/db.json/blob/master/db/location.md) - База адресов
-- База адресов может иметь очень большой размер. У нас разбира на отдельные таблицы.
+- База адресов может иметь очень большой размер. У нас разбита на отдельные таблицы.
 - [`country`](https://github.com/pllano/db.json/blob/master/db/country.md) - Страна
 - [`region`](https://github.com/pllano/db.json/blob/master/db/region.md) - Область (регион)
 - [`city`](https://github.com/pllano/db.json/blob/master/db/city.md) - Город (населенный пункт)
