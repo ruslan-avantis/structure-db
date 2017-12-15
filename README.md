@@ -182,7 +182,6 @@ if (file_exists($uri_db)){
                                 $row .= ", ".$key." ".$value;
                             } else {
                                 echo "название поля или тип данных не определены";
-                                return;
                             }
                               } else {
                                   echo $key." не прошел проверку preg_match [a-z0-9_]";
