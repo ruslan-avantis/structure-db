@@ -180,13 +180,16 @@ if (file_exists("db.json")){
                                 $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
                                 $row .= ", ".$key." ".$value;
                             } else {
-                                echo "key и value не определены"; return;
+                                echo "key и value не определены";
+                                return;
                             }
                               } else {
-                                  echo "key не прошол проверку preg_match [a-z0-9_]"; return;
+                                  echo "key не прошол проверку preg_match [a-z0-9_]";
+                                  return;
                               }
                         } else {
-                            echo "value должен иметь один из типов: boolean, string, integer, double"; return;
+                            echo "value должен иметь один из типов: boolean, string, integer, double";
+                            return;
                         }
                     }
                     // Формируем запрос
