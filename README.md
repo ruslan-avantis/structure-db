@@ -1,5 +1,7 @@
-# db.json - Структуры базы данных
+# db.json - Структура базы данных интернет-магазина
 Мы вывели структуру базы данных для [API Shop](https://github.com/pllano/api-shop), [api-json-db](https://github.com/pllano/api-json-db), [APIS-2018](https://github.com/pllano/APIS-2018/) в отдельный репозиторий.
+
+Мы решили вывести 
 
 ### Поддерживаемые типы данных в db.json
 - `boolean` — Логический тип `true` или `false`
@@ -18,6 +20,9 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 Результат:
 - `sf_user` - Таблица `user`
 - `jhbg5r_login` - Поле `login`
+
+### Использование в API Shop
+Скачайте файл [db.json](https://github.com/pllano/db.json/blob/master/db.json) отредактируйте его если вы хотите внести свои дополнения. Скопируйте файл в папку `ваша_бд`/`core`/ API Shop автоматически создаст новые таблицы.
 
 ## База / таблицы
 #### Глобальные
@@ -141,6 +146,56 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`city`](https://github.com/pllano/db.json/blob/master/db/city.md) - Город (населенный пункт)
 - [`district`](https://github.com/pllano/db.json/blob/master/db/district.md) - Район города
 - [`street`](https://github.com/pllano/db.json/blob/master/db/street.md) - Улица
+
+### Использование в MySql
+Если вам подходит наша структура базы данных, вы может использовать ее в своих проектах.
+Для автоматического создания 
+```php
+//	Автоматически создаем таблицы в MySQL
+if (file_exists('db.json')){
+    // Загрузить файл db.json
+    $db = json_decode(file_get_contents('db.json'), true);
+    $count = count($db_json);
+    
+    if ($count >= 1) {
+        // Подключаетесь к базе
+        $link = mysqli_connect($host, $user, $password, $database)
+            or die("Ошибка " . mysqli_error($link));
+
+        foreach($db as $unit){
+            // Если существует поле table
+            if (isset($unit["table"])) {
+                if ($unit["action"] == 'create') {
+                    $unitCount = count($unit["schema"]);
+                    if ($unitCount >= 1) {
+                        $row = "";
+                        $value = "";
+                         foreach($unit["schema"] as $key => $value){
+                            if (isset($key) && isset($value)) {
+                                if ($key != "id") {
+                                    // Конвертируем тип
+                                    $value = str_replace("boolean", "CHAR( 5 ) NOT NULL", $value);
+                                    $value = str_replace("string", "VARCHAR( 255 ) NOT NULL", $value);
+                                    $value = str_replace("integer", "INT( 11 ) NOT NULL", $value);
+                                    $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
+                                    $row .= ", ".$key." ".$value;
+                                }
+                            }
+                        }
+                            // Формируем запрос
+                            $query ="CREATE Table ".$unit["table"]."(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY".$row.")";
+                            // Отправляем запрос
+                            $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+                    }
+                }
+            }
+        }
+        // Закрываем соединение с БД
+        mysqli_close($link);
+        echo "Создание таблиц прошло успешно";
+    }
+}
+```
 
 <a name="feedback"></a>
 ## Поддержка, обратная связь, новости
