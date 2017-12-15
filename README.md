@@ -202,7 +202,7 @@ if (file_exists($uri_db)){
                             CHANGE id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY".$row;
                     }
                     // Отправляем запрос
-                    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+                    mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                     
                 } else {
                     echo "У ".$table["table"]." отсутствует schema или action != create";
