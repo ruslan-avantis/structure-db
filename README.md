@@ -155,9 +155,10 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 ### Использование в MySql
 #### Создаем таблицы в MySQL
 ```php
-if (file_exists("db.json")){
+$uri_db = "db.json";
+if (file_exists($uri_db)){
     // Загрузить файл db.json
-    $db = json_decode(file_get_contents("db.json"), true);
+    $db = json_decode(file_get_contents($uri_db), true);
     if (count($db) >= 1) {
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
@@ -185,12 +186,10 @@ if (file_exists("db.json")){
                                 return;
                             }
                               } else {
-                                  echo "key не прошел проверку preg_match [a-z0-9_]";
-                                  return;
+                                  echo $key." не прошел проверку preg_match [a-z0-9_]";
                               }
                         } else {
-                            echo "value должен иметь один из типов: boolean, string, integer, double";
-                            return;
+                            echo "value у ".$key." должен иметь один из типов: boolean, string, integer, double";
                         }
                     }
                     // Формируем запрос
@@ -200,24 +199,23 @@ if (file_exists("db.json")){
                     // Отправляем запрос
                     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 } else {
-                    echo "Отсутствует schema или action != create";
-                    return;
+                    echo "У ".$table["table"]." отсутствует schema или action != create";
                 }
             } else {
                 echo "Название одной из таблиц не определено";
-                return;
             }
         }
         // Закрываем соединение с БД
         mysqli_close($link);
         echo "Создание таблиц прошло успешно";
+	return true;
     } else {
         echo "Таблицы в файле db.json не найдены";
-        return;
+        return false;
     }
 } else {
-    echo "По указанному пути Файл db.json не найден";
-    return;
+    echo "По указанному пути ".$uri_db." файл не найден";
+    return false;
 }
 ```
 При желании можно дописать автоматическое создание индексов и связей.
