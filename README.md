@@ -161,9 +161,7 @@ if (file_exists($uri_db)){
     $db = json_decode(file_get_contents($uri_db), true);
     if (count($db) >= 1) {
         // Подключаетесь к базе
-        $link = mysqli_connect($host, $user, $password, $database)
-            or die("Ошибка " . mysqli_error($link));
-	    return false;
+        $link = mysqli_connect($host, $user, $password, $database) or die("Ошибка " . mysqli_error($link));
  
         foreach($db as $table){
             // Если существует поле table
