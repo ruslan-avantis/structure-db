@@ -1,13 +1,23 @@
 # Мультисайтовость
 ## site - Конфигурация и настройки системы
 - `id` - integer - в других таблицах `site_id`
-- `uri` - string - URL сайта в формате `example.com`
-- `name` - string - Внутреннее название сайта `Example.com`
-- `logo_url` - string - URL логотипа
-- `logo_title` - string - текст для `alt` картинки и `title` ссылки
-- `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
+- `state` - integer - Выкл. = 0 или Вкл. = 1
+- `authorize` - integer - доступный всем 0 или только зарегестрированным 1
 - `http_protocol` - string - по умолчанию `https`
-- `authorize` - integer - Доступный всем 0 или только зарегестрированным 1
-- `copyright` - string - текст для copyright
-- `alias_id` - string - Второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
-- `state` - integer - 0 или 1
+- `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
+- `uri` - string - URL сайта в формате `example.com`
+- `name` - string - внутреннее название сайта `<h1></h1>`
+- `title` - string - выводится `<title></title>`
+- `keywords` - string - выводится `<meta name="keywords" content="">`
+- `description` - string - выводится `<meta name="description" content="">`
+- `icon` - string - по умолчанию `<link rel="icon" href="favicon.ico">`
+- `lang` - string - по умолчанию `<html lang="ru">`
+- `logo_url` - string - URL логотипа. По умолчанию `/images/jogo.jpg`
+- `logo_title` - string - текст для `alt` картинки и `title` ссылки
+- `copyright` - string - текст для copyright. По умолчанию `""`
+- `template` - string - название шаблона. По умолчанию `/themes/templates/template`
+- `country_id` - integer - код страны. По умолчанию `1` = `UA`
+- `currency_id` - integer - валюта. По умолчанию `1` = `UAH`, `грн.`
+- `prefix_invoice` - string - Префикс в счетах. По умолчанию `APISHOP_`
+- `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
+ 
