@@ -155,7 +155,6 @@ if (file_exists('db.json')){
     // Загрузить файл db.json
     $db = json_decode(file_get_contents('db.json'), true);
     $count = count($db_json);
- 
     if ($count >= 1) {
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
@@ -163,11 +162,9 @@ if (file_exists('db.json')){
  
         foreach($db as $unit){
             // Если существует поле table
-            if (isset($unit["table"]) && $unit["action"] == "create") {
-                if (count($unit["schema"]) >= 1) {
-                    $row = "";
-                    $value = "";
-                    
+            if (isset($unit["table"])) {
+                if (count($unit["schema"]) >= 1 && $unit["action"] == "create") {
+                    $row = ""; 
                     foreach($unit["schema"] as $key => $value){
                         if (isset($key) && isset($value)) {
                             if ($key != "id") {
@@ -187,7 +184,6 @@ if (file_exists('db.json')){
                 }
             }
         }
- 
         // Закрываем соединение с БД
         mysqli_close($link);
         echo "Создание таблиц прошло успешно";
