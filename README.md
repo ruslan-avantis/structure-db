@@ -145,7 +145,7 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - База адресов может иметь очень большой размер. У нас разбита на отдельные таблицы.
 - [`country`](https://github.com/pllano/db.json/blob/master/db/country.md) - Страна
 - [`region`](https://github.com/pllano/db.json/blob/master/db/region.md) - Область (регион)
-- [`zip_code`](https://github.com/pllano/db.json/blob/master/db/zip_code.md) - Почтовый индекс
+- [`postal_code`](https://github.com/pllano/db.json/blob/master/db/postal_code.md) - Почтовый индекс
 - [`city`](https://github.com/pllano/db.json/blob/master/db/city.md) - Город (населенный пункт)
 - [`district`](https://github.com/pllano/db.json/blob/master/db/district.md) - Район города
 - [`street`](https://github.com/pllano/db.json/blob/master/db/street.md) - Улица
