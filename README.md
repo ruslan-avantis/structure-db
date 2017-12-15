@@ -41,7 +41,7 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 - [`pay`](https://github.com/pllano/db.json/blob/master/db/pay.md) - Оплаты
 #### ERP
 - [`invoice`](https://github.com/pllano/db.json/blob/master/db/invoice.md) - Счета
-- [`invoice_product`](https://github.com/pllano/db.json/blob/master/db/invoice_product.md) - Товары в заказе
+- [`invoice_product`](https://github.com/pllano/db.json/blob/master/db/invoice_product.md) - Товары в счетах
 - [`invoice_product_status`](https://github.com/pllano/db.json/blob/master/db/invoice_product_status.md) - Статусы товаров
 - [`contract`](https://github.com/pllano/db.json/blob/master/db/contract.md) - Договора
 - [`payment`](https://github.com/pllano/db.json/blob/master/db/payment.md) - Платежи
