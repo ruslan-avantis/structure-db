@@ -1,15 +1,15 @@
 # Категории
 ## category - Категории товара
 - `id` - integer - в других таблицах `category_id`
-- `parent_id` - integer - id родительской категории по умолчанию 0
+- `parent_id` - integer - id родительской категории по умолчанию `0`
 - `site_id` - integer - мультисайтовость
-- `state` - integer - Выкл. = 0 или Вкл. = 1
+- `state` - integer - Выкл. = 0 или Вкл. = `1`
 - `sort` - integer - Сортировка
-- `authorize` - integer - доступный всем 0 или только зарегестрированным 1
-- `only_available` - integer - =0 выводить все товары, =1 выводить только с наличия
-- `products_limit` - integer - Товаров на страницу. По умолчанию 15
-- `categories_template` - string - Шаблон категории. По умолчанию default
-- `products_template` - string - Шаблон карточки товара в списке товаров. По умолчанию default
+- `authorize` - integer - доступный всем `0` или только зарегестрированным 1
+- `only_available` - integer - =`0` выводить все товары, =1 выводить только с наличия
+- `products_limit` - integer - Товаров на страницу. По умолчанию `15`
+- `categories_template` - string - Шаблон категории. По умолчанию `default`
+- `products_template` - string - Шаблон карточки товара в списке товаров. По умолчанию `default`
 - `name` - string - заглавие `<h1></h1>`
 - `title` - string - выводится `<title></title>`
 - `keywords` - string - выводится `<meta name="keywords" content="">`
