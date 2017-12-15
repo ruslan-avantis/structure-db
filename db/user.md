@@ -1,6 +1,6 @@
 # user
 
-## schema - структура таблицы
+## `user` schema - структура таблицы
 ```json
 {
 "alias": "string",
@@ -14,7 +14,7 @@
 "state": "integer"
 }
 ```
-## relations - связи
+## `user` relations - связи
 ```json
 "relations": {
  "user_data": {
