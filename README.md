@@ -156,7 +156,7 @@ $db->setPrefixColumn("jhbg5r"); // Установить префикс поле�
 if (file_exists('db.json')){
     // Загрузить файл db.json
     $db = json_decode(file_get_contents('db.json'), true);
-    if (count($db_json) >= 1) {
+    if (count($db) >= 1) {
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
             or die("Ошибка " . mysqli_error($link));
