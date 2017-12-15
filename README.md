@@ -163,7 +163,7 @@ if (file_exists($uri_db)){
         // Подключаетесь к базе
         $link = mysqli_connect($host, $user, $password, $database)
             or die("Ошибка " . mysqli_error($link));
-			return;
+	    return false;
  
         foreach($db as $table){
             // Если существует поле table
