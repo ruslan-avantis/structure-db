@@ -16,8 +16,6 @@
 - `title` - string - выводится `<title></title>`
 - `keywords` - string - выводится `<meta name="keywords" content="">`
 - `description` - string - выводится `<meta name="description" content="">`
-- `alias` - string - используется при формировании URL - генерируется `\Pllano\ApiShop\Core\Utility::get_alias($str, $charset = 'UTF-8');`
-- `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `image` - string - картинка категории
 - `text` - string - описания категории
 - `note` - string - краткое описания категории
@@ -32,4 +30,42 @@
 - `og_url` - string - Open Graph выводится `<meta property="og:url" content="" />`
 - `og_locale` - string - Open Graph выводится `<meta property="og:locale" content="" />`
 - `og_type` - string - Open Graph выводится `<meta property="og:type" content="" />`
+- `alias` - string - используется при формировании URL - генерируется `\Pllano\ApiShop\Core\Utility::get_alias($str, $charset = 'UTF-8');`
+- `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
  
+ ### `category` schema - структура таблицы
+```json
+{
+"parent_id": "integer",
+"site_id": "integer",
+"state": "integer",
+"sort": "integer",
+"authorize": "integer",
+"only_available": "integer",
+"categories_template": "string",
+"products_template": "string",
+"products_limit": "integer",
+"robots": "string",
+"canonical": "string",
+"name": "string",
+"title": "string",
+"keywords": "string",
+"description": "string",
+"image": "string",
+"text": "string",
+"note": "string",
+"seo_h1": "string",
+"seo_title": "string",
+"seo_keywords": "string",
+"seo_description": "string",
+"seo_text": "string",
+"og_title": "string",
+"og_description": "string",
+"og_image": "string",
+"og_url": "string",
+"og_locale": "string",
+"og_type": "string",
+"alias": "string",
+"alias_id": "string"
+}
+```
