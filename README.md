@@ -171,7 +171,7 @@ if (file_exists("db.json")){
                     foreach($table["schema"] as $key => $value){
                         if (isset($key) && isset($value)) {
                             if ($key != "id" && preg_match("[a-z0-9_]", $key)) {
-                            if ($value == "boolean" || $value == "string" || 
+                              if ($value == "boolean" || $value == "string" || 
                                 $value == "integer" || $value == "double") {
                                 // Конвертируем тип
                                 $value = str_replace("boolean", "CHAR( 5 ) NOT NULL", $value);
@@ -179,8 +179,14 @@ if (file_exists("db.json")){
                                 $value = str_replace("integer", "INT( 11 ) NOT NULL", $value);
                                 $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
                                 $row .= ", ".$key." ".$value;
+                            } else {
+                                echo "key и value не определены"; return;
                             }
-                            }
+                              } else {
+                                  echo "key не прошол проверку preg_match [a-z0-9_]"; return;
+                              }
+                        } else {
+                            echo "value должен иметь один из типов: boolean, string, integer, double"; return;
                         }
                     }
                     // Формируем запрос
