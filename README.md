@@ -184,7 +184,9 @@ if (file_exists("db.json")){
                         }
                     }
                     // Формируем запрос
-                    $query ="CREATE Table ".$table["table"]."(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY".$row.")";
+                    $query ="CREATE Table ".$table["table"]."(
+                    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+                    ".$row.")";
                     // Отправляем запрос
                     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 }
