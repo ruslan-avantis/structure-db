@@ -175,10 +175,10 @@ if (file_exists($uri_db)){
                               if ($value == "boolean" || $value == "string" || 
                                 $value == "integer" || $value == "double") {
                                 // Конвертируем тип
-                                $value = str_replace("boolean", "CHAR( 5 ) NOT NULL", $value);
-                                $value = str_replace("string", "VARCHAR( 255 ) NOT NULL", $value);
-                                $value = str_replace("integer", "INT( 11 ) NOT NULL", $value);
-                                $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL", $value);
+                                $value = str_replace("boolean", "CHAR( 5 ) NOT NULL DEFAULT ''", $value);
+                                $value = str_replace("string", "VARCHAR( 255 ) NOT NULL DEFAULT ''", $value);
+                                $value = str_replace("integer", "INT( 11 ) NOT NULL DEFAULT '0'", $value);
+                                $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL DEFAULT '0.00'", $value);
                                 $row .= ", ".$key." ".$value;
                             } else {
                                 echo "название поля или тип данных не определены";
@@ -190,12 +190,20 @@ if (file_exists($uri_db)){
                             echo "value у ".$key." должен иметь один из типов: boolean, string, integer, double";
                         }
                     }
-                    // Формируем запрос
-                    $query ="CREATE Table ".$table["table"]."(
-                    id INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY".$row."
-                    )";
+					
+					if (!mysql_query("SELECT * FROM `".$table["table"]."`")){
+                        // Создаем таблицу
+                        $query ="CREATE TABLE IF NOT EXISTS ".$table["table"]."(
+                            id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY".$row."
+							)";
+					} else {
+					    // Обновляем существующую таблицу
+					    $query ="ALTER TABLE ".$table["table"]." 
+						    CHANGE id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY".$row;
+					}
                     // Отправляем запрос
                     $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+					
                 } else {
                     echo "У ".$table["table"]." отсутствует schema или action != create";
                 }
