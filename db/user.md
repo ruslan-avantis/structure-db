@@ -1,7 +1,7 @@
 # user
 
 ## schema - структура таблицы
-```php
+```json
 {
 "alias": "string",
 "role": "string",
@@ -15,8 +15,8 @@
 }
 ```
 ## relations - связи
-```php
-{"relations": {
+```json
+"relations": {
  "user_data": {
   "type": "hasMany",
   "keys": {
@@ -31,5 +31,5 @@
     "foreign": "user_id"
   }
  }
-}}
+}
 ```
