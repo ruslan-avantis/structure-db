@@ -9,9 +9,11 @@
 - `payment_mode` - string - Тип счета (наличные, безналичные, online money, bitcoin итд.)
 - `identification_code` - string - Идентификационный код
 - `vat_id` - string - Налоговый номер
-- `account_number` - string - Номер счета
-- `payment_system` - string - Название Банка или платежной системы
-- `bic` - string - BIC (Business Identifier Codes) - Код банка или платежной системы
+- `merchant_code` - string - Код продавца
+- `payment_account` - string - Номер счета
+- `correspondent_account` - string - Корреспондентский счёт
+- `payment_system` - string - Название банка или платежной системы
+- `bic` - string - Банковский идентификационный код
 - `swift` - string - SWIFT - Международный код банка или платежной системы
 - `iban` - string - IBAN - счет в международном формате
 - `state` - integer - Выкл. = 0 или Вкл. = 1
@@ -25,10 +27,12 @@
 "payment_mode": "string",
 "identification_code": "string",
 "vat_id": "string",
-"bank": "string",
+"merchant_code": "string",
+"payment_account": "string",
+"correspondent_account": "string",
+"payment_system": "string",
 "bic": "string",
 "swift": "string",
-"account_number": "string",
 "iban": "string",
 "state": "integer"
 }
