@@ -17,6 +17,7 @@
 - `double` — Число с плавающей точкой
 
 ## База / таблицы
+В этом списке 97 таблиц
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Мультисайтовость
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
