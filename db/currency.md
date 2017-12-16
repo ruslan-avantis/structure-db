@@ -12,3 +12,19 @@
 - `course_ar` - string - продажа `UAH=1.00`
 - `modified` - string - дата и время обновления курса
  
+### `currency` schema - структура таблицы
+```json
+{
+"state": "integer",
+"blank": "integer",
+"name": "string",
+"iso_code": "string",
+"iso_code_num": "string",
+"sign": "string",
+"course": "double",
+"course_br": "double",
+"course_ar": "double",
+"modified": "string"
+}
+```
+ 
