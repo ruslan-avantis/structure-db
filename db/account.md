@@ -12,7 +12,7 @@
 - `merchant_code` - string - Код продавца
 - `payment_account` - string - Номер счета
 - `correspondent_account` - string - Корреспондентский счёт
-- `payment_system` - string - Название банка или платежной системы
+- `payment_system` - string - Название банка или платежной системы (Payment service provider)
 - `bic` - string - Банковский идентификационный код
 - `swift` - string - SWIFT - Международный код банка или платежной системы
 - `iban` - string - IBAN - счет в международном формате
