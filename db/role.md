@@ -25,8 +25,8 @@
  "user": {
   "type": "hasMany",
   "keys": {
-   "local": "user_id",
-   "foreign": "id"
+   "local": "role_id",
+   "foreign": "role_id"
   }
  }
 }
