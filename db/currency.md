@@ -7,8 +7,8 @@
 - `iso_code` - string - код `UAH`, `USD`, `EUR`
 - `iso_code_num` - string - код `980`, `840`, `978`
 - `sign` - string - `₴`, `€`, `$`
-- `course` - string - курс в национальном банке
-- `course_br` - string - покупка
-- `course_ar` - string - продажа
+- `course` - string - курс в национальном банке `UAH=1.00`
+- `course_br` - string - покупка `UAH=1.00`
+- `course_ar` - string - продажа `UAH=1.00`
 - `modified` - string - дата и время обновления курса
  
