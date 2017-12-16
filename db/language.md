@@ -24,3 +24,27 @@
 - `pt` - string - Portugues
 - `jp` - string - 日本語
  
+### `language` schema - структура таблицы
+```json
+{
+"state": "integer",
+"en": "string",
+"ua": "string",
+"ru": "string",
+"be": "string",
+"kk": "string",
+"ka": "string",
+"de": "string",
+"fr": "string",
+"pl": "string",
+"it": "string",
+"es": "string",
+"tr": "string",
+"ar": "string",
+"hi": "string",
+"bn": "string",
+"pt": "string",
+"jp": "string"
+}
+```
+ 
