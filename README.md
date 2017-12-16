@@ -26,7 +26,6 @@
 - [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
 - [`account`](https://github.com/pllano/db.json/blob/master/db/account.md) - Счета
 - [`corporation`](https://github.com/pllano/db.json/blob/master/db/corporation.md) - Юридические лица
-- [`delivery`](https://github.com/pllano/db.json/blob/master/db/delivery.md) - Способы доставки
 #### Пользователи
 - [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи 
@@ -45,6 +44,8 @@
 - [`contract`](https://github.com/pllano/db.json/blob/master/db/contract.md) - Договора
 - [`payment`](https://github.com/pllano/db.json/blob/master/db/payment.md) - Платежи
 - [`payment_type`](https://github.com/pllano/db.json/blob/master/db/payment_type.md) - Типы платежей
+- [`delivery`](https://github.com/pllano/db.json/blob/master/db/delivery.md) - Доставка
+- [`delivery_options`](https://github.com/pllano/db.json/blob/master/db/delivery_options.md) - Способы доставки
 - [`reclamation`](https://github.com/pllano/db.json/blob/master/db/reclamation.md) - Рекламации
 - [`bill`](https://github.com/pllano/db.json/blob/master/db/bill.md) - Приходные накладные
 - [`bill_move`](https://github.com/pllano/db.json/blob/master/db/bill_move.md) - Накладные перемещения
