@@ -2,9 +2,9 @@
 Мы планируем доработать данную таблицу чтобы она подходила для счетов всех видов валют и платежных систем
 ## account
 - `id` - integer - в других таблицах `account_id`
-- `default` - string - По умолчанию 1 или нет 0
+- `default` - integer - По умолчанию 1 или нет 0
 - `corporation_id` -integer - Юр. лицо которому принадлежит счет
-- `conditions_id` - string - id договора по умолчанию при выставлении счета
+- `conditions_id` - integer - id договора по умолчанию при выставлении счета
 - `prefix_invoice` - string - Префикс для выписки счетов
 - `payment_mode` - string - Тип счета (наличные, безналичные, online money, bitcoin итд.)
 - `identification_code` - string - Идентификационный код
@@ -22,7 +22,7 @@
 {
 "default": "integer",
 "corporation_id": "integer",
-"conditions_id": "string",
+"conditions_id": "integer",
 "prefix_invoice": "string",
 "payment_mode": "string",
 "identification_code": "string",
