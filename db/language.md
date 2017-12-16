@@ -6,19 +6,21 @@
 ## language - Локализация таблицей в БД
 - `id` - integer - в других таблицах `language_id`
 - `state` - integer - Выкл. = 0 или Вкл. = 1
+- `en` - string - English
+- `ua` - string - Українська
 - `ru` - string - Русский
-- `ua` - string - Украинский
-- `en` - string
-- `de` - string
-- `fr` - string
-- `pl` - string
-- `it` - string
-- `es` - string
-- `tr` - string
-- `ar` - string
-- `hi` - string
-- `bn` - string
-- `ko` - string
-- `pt` - string
-- `jp` - string
-- `cn` - string
+- `be` - string - Беларускі
+- `kk` - string - Қазақша
+- `ka` - string - ქართული
+- `de` - string - Deutsch
+- `fr` - string - Français
+- `pl` - string - Polski
+- `it` - string - Italiano
+- `es` - string - Español
+- `tr` - string - Türk
+- `ar` - string - العربية
+- `hi` - string - हिन्दी
+- `bn` - string - বাঙালি
+- `pt` - string - Portugues
+- `jp` - string - 日本語
+ 
