@@ -32,7 +32,7 @@
 - [`user_data`](https://github.com/pllano/db.json/blob/master/db/user_data.md) - Данные пользователя
 - [`contact`](https://github.com/pllano/db.json/blob/master/db/contact.md) - Контактные данные
 - [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
-- [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Контактные лица
+- [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Сотрудники компании, поставщиков итд.
 #### Корзина
 - [`cart`](https://github.com/pllano/db.json/blob/master/db/cart.md) - Корзина
 - [`order`](https://github.com/pllano/db.json/blob/master/db/order.md) - Заказы
