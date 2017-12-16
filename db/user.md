@@ -2,7 +2,7 @@
 ## user
 - `id` - integer - id пользователя
 - `alias_id` - string - Второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
-- `role_id` - integer - Роль пользователя по умолчанию `role=1` (покупатель)
+- `role_id` - integer - Роль пользователя по умолчанию `role_id=1` (покупатель)
 - `login` - string - Логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
 - `password` - string - Хеш пароля созданный `password_hash` проверяется `password_verify`
 - `email` - string - Email пользователя проверяется `filter_var($email, FILTER_VALIDATE_EMAIL);` при желании можно шифровать с помощью [defuse/php-encryption](https://github.com/defuse/php-encryption)
