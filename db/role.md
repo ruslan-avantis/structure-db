@@ -19,4 +19,15 @@
 "state": "integer"
 }
 ```
- 
+### `role` relations - связи
+```json
+"relations": {
+ "user": {
+  "type": "hasMany",
+  "keys": {
+   "local": "user_id",
+   "foreign": "id"
+  }
+ }
+}
+```
