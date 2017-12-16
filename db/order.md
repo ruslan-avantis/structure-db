@@ -8,6 +8,7 @@
 - `delivery_id` - integer - id доставки
 - `adress_id` - integer - адрес доставки
 - `conditions_id` - integer - id контракта
+- `seller_id` - integer - id продавца
 - `state` - integer - статус
 - `alias_id` - string - алиас
 ### `order` schema - структура таблицы
@@ -20,6 +21,7 @@
 "delivery_id": "integer",
 "adress_id": "integer",
 "conditions_id": "integer",
+"seller_id": "integer",
 "state": "integer",
 "alias_id": "string"
 }
