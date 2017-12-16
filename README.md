@@ -37,6 +37,7 @@
 - [`cart`](https://github.com/pllano/db.json/blob/master/db/cart.md) - Корзина
 - [`order`](https://github.com/pllano/db.json/blob/master/db/order.md) - Заказы
 - [`pay`](https://github.com/pllano/db.json/blob/master/db/pay.md) - Оплаты
+
 #### ERP
 - [`invoice`](https://github.com/pllano/db.json/blob/master/db/invoice.md) - Счета
 - [`invoice_product`](https://github.com/pllano/db.json/blob/master/db/invoice_product.md) - Товары в счетах
@@ -44,6 +45,7 @@
 - [`contract`](https://github.com/pllano/db.json/blob/master/db/contract.md) - Договора
 - [`payment`](https://github.com/pllano/db.json/blob/master/db/payment.md) - Платежи
 - [`payment_type`](https://github.com/pllano/db.json/blob/master/db/payment_type.md) - Типы платежей
+- [`payment_resource`](https://github.com/pllano/db.json/blob/master/db/payment_resource.md) - Ресурсы платежей
 - [`delivery`](https://github.com/pllano/db.json/blob/master/db/delivery.md) - Доставка
 - [`delivery_options`](https://github.com/pllano/db.json/blob/master/db/delivery_options.md) - Способы доставки
 - [`reclamation`](https://github.com/pllano/db.json/blob/master/db/reclamation.md) - Рекламации
