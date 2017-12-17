@@ -13,8 +13,7 @@
 - `string` — Строка
 - `double` — Число с плавающей точкой
 - `boolean` — Логический тип `true` или `false`
-## База / таблицы
-В этом списке 97 таблиц
+## База / таблицы (101 таблица) 
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Мультисайтовость
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
