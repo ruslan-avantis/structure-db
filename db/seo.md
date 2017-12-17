@@ -1,7 +1,8 @@
 # SEO
 Универсальная таблица не принадлежащая другим таблицам. Таблица SEO позволяет организовать отдельный доступ для SEO специалиста. Связать индивидуальные SEO параметры можно с любой таблицей.
 ## seo - Таблица индивидуальных SEO параметров
-- `id` - integer - в других таблицах `seo_id`
+- `id` - integer - технический id
+- `seo_id` - integer - основной id
 - `site_id` - integer - сайт
 - `table_name` - integer - название таблицы `product` или `category`
 - `unit_id` - integer - уникальный id записи
@@ -18,6 +19,7 @@
 ### `seo` schema - структура таблицы
 ```json
 {
+"seo_id": "integer",
 "site_id": "integer",
 "table_name": "string",
 "unit_id": "integer",
