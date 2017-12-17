@@ -27,7 +27,6 @@
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи 
 - [`user_data`](https://github.com/pllano/db.json/blob/master/db/user_data.md) - Данные пользователя
 - [`contact`](https://github.com/pllano/db.json/blob/master/db/contact.md) - Контактные данные
-- [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
 - [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Сотрудники компании, поставщиков итд.
 #### Корзина
 - [`cart`](https://github.com/pllano/db.json/blob/master/db/cart.md) - Корзина
@@ -129,16 +128,15 @@
 - [`special_offer`](https://github.com/pllano/db.json/blob/master/db/special_offer.md) - Специальные предложения
 - [`proposals`](https://github.com/pllano/db.json/blob/master/db/proposals.md) -  Предложения
 #### Адреса
-- База адресов может быть покупная или собираемая автоматически в процессе работы сайта
+- База адресов может быть покупная или собираться автоматически в процессе работы сайта
 - [`location`](https://github.com/pllano/db.json/blob/master/db/location.md) - База адресов
-- База адресов может иметь очень большой размер. У нас разбита на отдельные таблицы.
 - [`country`](https://github.com/pllano/db.json/blob/master/db/country.md) - Страна
 - [`region`](https://github.com/pllano/db.json/blob/master/db/region.md) - Область (регион)
 - [`postal_code`](https://github.com/pllano/db.json/blob/master/db/postal_code.md) - Почтовый индекс
 - [`city`](https://github.com/pllano/db.json/blob/master/db/city.md) - Город (населенный пункт)
 - [`district`](https://github.com/pllano/db.json/blob/master/db/district.md) - Район города
 - [`street`](https://github.com/pllano/db.json/blob/master/db/street.md) - Улица
-
+- [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
 
 ## Префиксы таблиц и полей
 Для дополнительной безопасности в начале названия таблиц или полей может быть указан префикс
