@@ -3,8 +3,10 @@
 - Таблицей `language` в базе данных
 - Файлами language.json в папке `/app/localization`
 
-## language - Локализация таблицей в БД
-- `id` - integer - в других таблицах `language_id`
+## language - Локализация
+- `id` - integer - технический id
+- `language_id` - integer - основной id
+- `site_id` - integer - id сайта
 - `state` - integer - Выкл. = 0 или Вкл. = 1
 - `en` - string - English
 - `ua` - string - Українська
@@ -27,6 +29,7 @@
 ### `language` schema - структура таблицы
 ```json
 {
+"language_id": "integer",
 "state": "integer",
 "en": "string",
 "ua": "string",
