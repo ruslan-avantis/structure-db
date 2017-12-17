@@ -1,6 +1,7 @@
 # user_data - Таблица личных данных пользователей.
 Эту таблицу при желании можно шифровать полностью
-- `id` - integer
+- `id` - integer - технический id
+- `user_data_id` - integer - основной id
 - `user_id` - integer - id пользователя в таблице `user`
 - `ticketed` - integer - Имеет доступ к тикет системе 1 нет 0
 - `admin_access` - integer - Имеет доступ а админ панель 1 нет 0
@@ -9,6 +10,7 @@
 ### `menu` schema - структура таблицы
 ```json
 {
+"user_data_id": "integer",
 "user_id": "integer",
 "ticketed": "integer",
 "admin_access": "integer",
