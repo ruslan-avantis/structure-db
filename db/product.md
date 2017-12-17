@@ -2,9 +2,9 @@
 В таблице товаров нет полей `price`, `image`, `description`, `seo`, `og` в связи с тем что эти данные выведены в отдельные таблицы 
 [price](https://github.com/pllano/db.json/blob/master/db/price.md), 
 [image](https://github.com/pllano/db.json/blob/master/db/image.md), 
-[description](https://github.com/pllano/db.json/blob/master/db/image.md), 
-[seo](https://github.com/pllano/db.json/blob/master/db/image.md), 
-[og](https://github.com/pllano/db.json/blob/master/db/image.md)
+[description](https://github.com/pllano/db.json/blob/master/db/description.md), 
+[seo](https://github.com/pllano/db.json/blob/master/db/seo.md), 
+[og](https://github.com/pllano/db.json/blob/master/db/og.md)
 ## product - Таблица товара
 - `id` - integer - в других таблицах `language_id`
 - `mod_id` - integer - id товара родителя обеденяющего группу товаров
