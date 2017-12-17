@@ -2,7 +2,7 @@
 ## article_category - Контент
 - `id` - integer - технический id
 - `article_category_id` - integer - основной id
-- `title` - string - название
+- `title` - string - название категории
 - `seo_id` - integer - таблица seo
 - `og_id` - integer - таблица og
 - `image_id` - integer - таблица image
