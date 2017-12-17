@@ -5,8 +5,8 @@
 - `product_id` - integer - id товара
 - `image_path` - string - локальный URL
 - `sort` - integer - сортировка
-- `alias_id` - string - id в прайс-листе продавца
-- `state` - integer - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` (Пример: 2fd4f3fbd83f)
+- `alias` - string - алиас
+- `state` - integer - статус
 ### `image` schema - структура таблицы
 ```json
 {
@@ -14,7 +14,7 @@
 "product_id": "integer",
 "image_path": "string",
 "sort": "integer",
-"alias_id": "string",
+"alias": "string",
 "state": "integer"
 }
 ```
