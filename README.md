@@ -17,7 +17,7 @@
 
 ## База / таблицы (100+ таблиц)
 #### Глобальные
-- [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Мультисайтовость
+- [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Конфигурация сайта
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
 - [`category`](https://github.com/pllano/db.json/blob/master/db/category.md) - Категории
 - [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
