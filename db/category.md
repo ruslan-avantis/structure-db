@@ -46,7 +46,7 @@
 "robots": "string",
 "canonical": "string",
 "seo_id": "integer",
-"og_id": "integer"
+"og_id": "integer",
 "alias": "string",
 "alias_id": "string"
 }
