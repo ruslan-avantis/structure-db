@@ -1,4 +1,5 @@
 # Товар
+В таблице товаров нет полей price, image в связи с тем что эти данные выведены в отдельные таблицы [price](https://github.com/pllano/db.json/blob/master/db/price.md), [image](https://github.com/pllano/db.json/blob/master/db/image.md)
 ## product - Таблица товара
 - `id` - integer - в других таблицах `language_id`
 - `mod_id` - integer - id товара родителя обеденяющего группу товаров
