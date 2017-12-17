@@ -37,7 +37,32 @@
 - [`cart`](https://github.com/pllano/db.json/blob/master/db/cart.md) - Корзина
 - [`order`](https://github.com/pllano/db.json/blob/master/db/order.md) - Заказы
 - [`pay`](https://github.com/pllano/db.json/blob/master/db/pay.md) - Оплаты
-
+#### Товары
+- [`product`](https://github.com/pllano/db.json/blob/master/db/product.md) - Товары
+- [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
+- [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания
+- [`type`](https://github.com/pllano/db.json/blob/master/db/type.md) - Типы товара
+- [`brand`](https://github.com/pllano/db.json/blob/master/db/brand.md) - Бренды
+- [`serie`](https://github.com/pllano/db.json/blob/master/db/serie.md) - Серии товара
+- [`complect`](https://github.com/pllano/db.json/blob/master/db/complect.md) - Комплекты: Товар состоит из ...
+- [`buytogether`](https://github.com/pllano/db.json/blob/master/db/buytogether.md) - Вместе дешевле
+- [`relevance`](https://github.com/pllano/db.json/blob/master/db/relevance.md) - Релевантность, Популярность, Рейтинг
+#### Цены на сайте
+- [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
+- [`price_rule`](https://github.com/pllano/db.json/blob/master/db/price_rule.md) - Ценовые правила продавца
+#### Прайс-листы
+- [`price_list`](https://github.com/pllano/db.json/blob/master/db/price_list.md) - Прайс-листы
+- [`price_list_rule`](https://github.com/pllano/db.json/blob/master/db/price_list_rule.md) - Ценовые правила
+#### Поставщики и Цены
+- [`supplier`](https://github.com/pllano/db.json/blob/master/db/supplier.md) - Поставщики
+- [`supplier_currency`](https://github.com/pllano/db.json/blob/master/db/supplier_currency.md) - Курсы валют поставщиков
+- [`supplier_account`](https://github.com/pllano/db.json/blob/master/db/supplier_account.md) - Юр. лица поставщиков (связь с таблицей account)
+#### Свойства
+- [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
+- [`property`](https://github.com/pllano/db.json/blob/master/db/property.md) - Настройки и связи набора и списка свойств
+- [`property_set`](https://github.com/pllano/db.json/blob/master/db/property_set.md) - Наборы свойств
+- [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
+- [`property_value`](https://github.com/pllano/db.json/blob/master/db/property_value.md) - Значения свойств
 #### ERP
 - [`invoice`](https://github.com/pllano/db.json/blob/master/db/invoice.md) - Счета
 - [`invoice_product`](https://github.com/pllano/db.json/blob/master/db/invoice_product.md) - Товары в счетах
@@ -107,32 +132,6 @@
 - [`discount_card`](https://github.com/pllano/db.json/blob/master/db/discount_card.md) - Дисконтные карты
 - [`special_offer`](https://github.com/pllano/db.json/blob/master/db/special_offer.md) - Специальные предложения
 - [`proposals`](https://github.com/pllano/db.json/blob/master/db/proposals.md) -  Предложения
-#### Товары
-- [`product`](https://github.com/pllano/db.json/blob/master/db/product.md) - Товары
-- [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
-- [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания
-- [`type`](https://github.com/pllano/db.json/blob/master/db/type.md) - Типы товара
-- [`brand`](https://github.com/pllano/db.json/blob/master/db/brand.md) - Бренды
-- [`serie`](https://github.com/pllano/db.json/blob/master/db/serie.md) - Серии товара
-- [`complect`](https://github.com/pllano/db.json/blob/master/db/complect.md) - Комплекты: Товар состоит из ...
-- [`buytogether`](https://github.com/pllano/db.json/blob/master/db/buytogether.md) - Вместе дешевле
-- [`relevance`](https://github.com/pllano/db.json/blob/master/db/relevance.md) - Релевантность, Популярность, Рейтинг
-#### Цены на сайте
-- [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
-- [`price_rule`](https://github.com/pllano/db.json/blob/master/db/price_rule.md) - Ценовые правила продавца
-#### Прайс-листы
-- [`price_list`](https://github.com/pllano/db.json/blob/master/db/price_list.md) - Прайс-листы
-- [`price_list_rule`](https://github.com/pllano/db.json/blob/master/db/price_list_rule.md) - Ценовые правила
-#### Поставщики и Цены
-- [`supplier`](https://github.com/pllano/db.json/blob/master/db/supplier.md) - Поставщики
-- [`supplier_currency`](https://github.com/pllano/db.json/blob/master/db/supplier_currency.md) - Курсы валют поставщиков
-- [`supplier_account`](https://github.com/pllano/db.json/blob/master/db/supplier_account.md) - Юр. лица поставщиков (связь с таблицей account)
-#### Свойства
-- [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
-- [`property`](https://github.com/pllano/db.json/blob/master/db/property.md) - Настройки и связи набора и списка свойств
-- [`property_set`](https://github.com/pllano/db.json/blob/master/db/property_set.md) - Наборы свойств
-- [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
-- [`property_value`](https://github.com/pllano/db.json/blob/master/db/property_value.md) - Значения свойств
 #### Адреса
 - База адресов может быть покупная или собираемая автоматически в процессе работы сайта
 - [`location`](https://github.com/pllano/db.json/blob/master/db/location.md) - База адресов
