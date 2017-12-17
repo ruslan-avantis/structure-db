@@ -1,7 +1,8 @@
 # Адреса
 Универсальная таблица адресов не принадлежащая другим таблицам
 ## address
-- `id` - integer - в других таблицах `contact_id`
+- `id` - integer - технический id
+- `contact_id` - integer - основной id
 - `site_id` - integer - id сайта
 - `table_name` - string - название таблицы `user_data`
 - `unit_id` - integer - id записи
@@ -22,6 +23,7 @@
 ### `address` schema - структура таблицы
 ```json
 {
+"contact_id": "integer",
 "site_id": "integer",
 "table_name": "string",
 "unit_id": "integer",
