@@ -1,6 +1,7 @@
 # Оплаты
 ## pay
-- `id` - integer - в других таблицах `order_id`
+- `id` - integer - технический id
+- `pay_id` - integer - основной id
 - `site_id` - integer - сайт
 - `user_id` - integer - user_id пользователь выполнивший операцию
 - `order_id` - integer - id заказа
@@ -15,6 +16,7 @@
 ### `pay` schema - структура таблицы
 ```json
 {
+"pay_id": "integer",
 "site_id": "integer",
 "user_id": "integer",
 "order_id": "integer",
@@ -35,14 +37,14 @@
   "type": "belongsTo",
   "keys": {
    "local": "user_id",
-   "foreign": "id"
+   "foreign": "pay_id"
   }
  },
   "order": {
   "type": "belongsTo",
   "keys": {
    "local": "order_id",
-   "foreign": "id"
+   "foreign": "pay_id"
   }
  }
 }
