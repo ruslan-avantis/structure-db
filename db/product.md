@@ -10,7 +10,7 @@
 - `code` - integer - `GTIN` или `EAN` код
 - `intro` - integer - краткое описание
 - `description_id` - integer
-- `seo_id` - integer - eo_id - SEO плагин
+- `seo_id` - integer - seo_id - SEO плагин
 - `og_id` - integer - og_id - Open Graph
 - `publish_beg` - integer - дата включения
 - `publish_end` - integer - дата выключения
