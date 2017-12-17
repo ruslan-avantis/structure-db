@@ -3,11 +3,11 @@
 ## image
 - `id` - integer - в других таблицах `image_id`
 - `site_id` - integer - сайт
-- `table_name` - integer - название таблицы `product`
+- `table_name` - string - название таблицы `product`
 - `unit_id` - integer - id записи
 - `image_path` - string - локальный URL
-- `sort` - integer - сортировка
 - `alias` - string - алиас
+- `sort` - integer - сортировка
 - `state` - integer - статус
 ### `image` schema - структура таблицы
 ```json
