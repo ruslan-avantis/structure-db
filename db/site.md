@@ -27,3 +27,30 @@
 ## На рассмотрении
 - `api_key` - string - Ключ доступа к API. Генерируется автоматически.
 - `crypt_key` - string - Ключ шифрования API. Генерируется автоматически.
+
+### `site` schema - структура таблицы
+```json
+{
+"state": "integer",
+"authorize": "integer",
+"cookie_consent": "string",
+"http_protocol": "string",
+"robots": "string",
+"uri": "string",
+"name": "string",
+"title": "string",
+"keywords": "string",
+"description": "string",
+"icon": "string",
+"lang": "string",
+"logo_url": "string",
+"logo_title": "string",
+"copyright": "string",
+"template": "string",
+"country_id": "integer",
+"currency_id": "integer",
+"prefix_invoice": "string",
+"vat_tax": "double",
+"alias_id": "string"
+}
+```
