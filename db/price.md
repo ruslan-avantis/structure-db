@@ -1,6 +1,7 @@
 # Цены
 ## price - Таблица цен
-- `id` - integer - в других таблицах `price_id`
+- `id` - integer - технический id
+- `price_id` - integer - основной id
 - `site_id` - integer - id сайта
 - `product_id` - integer - id товара
 - `category_id` - integer - id категории
@@ -21,6 +22,7 @@
 ### `price` schema - структура таблицы
 ```json
 {
+"price_id": "integer",
 "site_id": "integer",
 "product_id": "integer",
 "category_id": "integer",
