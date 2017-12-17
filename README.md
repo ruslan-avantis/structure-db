@@ -15,15 +15,15 @@
 - `double` — Число с плавающей точкой
 - `boolean` — Логический тип `true` или `false`
 
-## База / таблицы (100+ таблиц)
+## База / 30 основных таблиц
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Конфигурация сайта
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
 - [`category`](https://github.com/pllano/db.json/blob/master/db/category.md) - Категории
-- [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
 - [`currency`](https://github.com/pllano/db.json/blob/master/db/currency.md) - Валюты
-- [`account`](https://github.com/pllano/db.json/blob/master/db/account.md) - Счета
-- [`corporation`](https://github.com/pllano/db.json/blob/master/db/corporation.md) - Юридические лица
+#### Контент
+- [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
+- [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
 #### Пользователи
 - [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи 
@@ -42,29 +42,29 @@
 - [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
 - [`seo`](https://github.com/pllano/db.json/blob/master/db/seo.md) - SEO тексты
 - [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания
+#### Цены на сайте
+- [`seller`](https://github.com/pllano/db.json/blob/master/db/seller.md) - Конфигурация продавца
+- [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
+- [`price_rule`](https://github.com/pllano/db.json/blob/master/db/price_rule.md) - Ценовые правила продавца
+- [`discount`](https://github.com/pllano/db.json/blob/master/db/discount.md) - Акции и скидки
 #### Свойства товаров
 - [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
 - [`property`](https://github.com/pllano/db.json/blob/master/db/property.md) - Настройки и связи набора и списка свойств
 - [`property_set`](https://github.com/pllano/db.json/blob/master/db/property_set.md) - Наборы свойств
 - [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
 - [`property_value`](https://github.com/pllano/db.json/blob/master/db/property_value.md) - Значения свойств
-#### Цены на сайте
-- [`seller`](https://github.com/pllano/db.json/blob/master/db/seller.md) - Конфигурация продавца
-- [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
-- [`price_rule`](https://github.com/pllano/db.json/blob/master/db/price_rule.md) - Ценовые правила продавца
-- [`discount`](https://github.com/pllano/db.json/blob/master/db/discount.md) - Акции и скидки
-#### Прайс-листы
+
+## Дополнительно 70+ таблиц
+#### Глобальные
+- [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
+- [`account`](https://github.com/pllano/db.json/blob/master/db/account.md) - Счета
+- [`corporation`](https://github.com/pllano/db.json/blob/master/db/corporation.md) - Юридические лица
+#### Поставщики и Прайс-листы
 - [`price_list`](https://github.com/pllano/db.json/blob/master/db/price_list.md) - Прайс-листы
 - [`price_list_rule`](https://github.com/pllano/db.json/blob/master/db/price_list_rule.md) - Ценовые правила
-#### Поставщики и Цены
 - [`supplier`](https://github.com/pllano/db.json/blob/master/db/supplier.md) - Поставщики
 - [`supplier_currency`](https://github.com/pllano/db.json/blob/master/db/supplier_currency.md) - Курсы валют поставщиков
 - [`supplier_account`](https://github.com/pllano/db.json/blob/master/db/supplier_account.md) - Юр. лица поставщиков (связь с таблицей account)
-#### Контент
-- [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
-- [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
-
-### Дополнительно
 #### Отзывы
 При создании отзыва автоматически создается Тикет, что дает возможность проконтролировать реакцию персонала на отзывы клиентов.
 - [`review`](https://github.com/pllano/db.json/blob/master/db/review.md) - Отзывы и обзоры
