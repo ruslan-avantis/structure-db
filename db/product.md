@@ -17,10 +17,10 @@
 - `template` - integer - индивидуальный шаблон страницы товара
 - `publish_beg` - integer - дата включения
 - `publish_end` - integer - дата выключения
-- `mod_id` - integer - id товара родителя обеденяющего несколько товаров в группу
+- `mod_id` - integer - id товара родителя объединяющего несколько товаров в группу
 - `complect_id` - integer - входит в комплект `product_id` или нет `0`
-- `priority` - integer - приоритет подымает в выдаче
-- `authorize` - integer - товар только для зарегестрированных пользователей
+- `priority` - integer - приоритет искусственно поднимает в выдаче
+- `authorize` - integer - товар только для зарегистрированных пользователей
 - `alias` - integer - алиас
 - `state` - integer - статус
 ### `product` schema - структура таблицы
