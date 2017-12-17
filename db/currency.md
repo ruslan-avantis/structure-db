@@ -1,6 +1,7 @@
 # Валюты
 ## currency
-- `id` - integer - в других таблицах `currency_id`
+- `id` - integer - технический id
+- `currency_id` - integer - основной id
 - `state` - integer - Выкл. = 0 или Вкл. = 1
 - `blank` - integer - Валюта по умолчанию `UAH=1`, `USD=0`, `EUR=0`
 - `name` - string - `грн.`, `EUR`, `$`
@@ -15,6 +16,7 @@
 ### `currency` schema - структура таблицы
 ```json
 {
+"currency_id": "integer",
 "state": "integer",
 "blank": "integer",
 "name": "string",
