@@ -1,4 +1,5 @@
 # Изображения
+В базе данных храним локальную ссылку на оригинал изображения, на сайте автоматически генерируются необходимые размеры. Рекомендуем обрабатывать изображения с помощью двух пакетов: сначала [spatie/image-optimizer](https://github.com/spatie/image-optimizer) оптимизировать вес а потом [imagine/imagine](https://github.com/avalanche123/Imagine) генерировать в указанный размер.
 ## image
 - `id` - integer - в других таблицах `image_id`
 - `site_id` - integer - сайт
