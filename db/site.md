@@ -1,7 +1,8 @@
 # Мультисайтовость
 Если вы планируете реализовывать мультисайтовость необходимо в каждой таблице добавить поле  `site_id`
 ## site - Конфигурация и настройки системы
-- `id` - integer - в других таблицах `site_id`
+- `id` - integer - технический id
+- `site_id` - integer - id сайта
 - `state` - integer - Выкл. = 0 или Вкл. = 1
 - `authorize` - integer - доступный всем 0 или только зарегестрированным 1
 - `cookie_consent` - string - Согласие с cookie. По умолчанию 0
@@ -32,6 +33,7 @@
 ```json
 {
 "state": "integer",
+"site_id": "integer",
 "authorize": "integer",
 "cookie_consent": "string",
 "http_protocol": "string",
