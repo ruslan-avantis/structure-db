@@ -1,6 +1,7 @@
 # Категории
 ## category - Категории товара
-- `id` - integer - в других таблицах `category_id`
+- `id` - integer - технический id
+- `category_id` - integer - основной id
 - `parent_id` - integer - id родительской категории по умолчанию `0`
 - `site_id` - integer - мультисайтовость
 - `authorize` - integer - доступный всем `0` или только зарегестрированным 1
@@ -25,6 +26,7 @@
 ### `category` schema - структура таблицы
 ```json
 {
+"category_id": "integer",
 "parent_id": "integer",
 "site_id": "integer",
 "authorize": "integer",
