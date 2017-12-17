@@ -1,6 +1,7 @@
 # Пользователь
 ## user
-- `id` - integer - id пользователя
+- `id` - integer - технический id
+- `user_id` - integer - основной id
 - `role_id` - integer - Роль пользователя по умолчанию `role_id=1` (покупатель)
 - `login` - string - Логин пользователя (может не использоватся) если для идентификации используются `email` и `phone`
 - `password` - string - Хеш пароля созданный `password_hash` проверяется `password_verify`
@@ -14,14 +15,15 @@
 ### `user` schema - структура таблицы
 ```json
 {
-"role": "string",
-"language": "string",
+"user_id": "string",
+"role_id": "string",
 "login": "string",
 "password": "string",
 "email": "string",
 "phone": "string",
+"language": "string",
 "cookie": "string",
-"alias": "string",
+"alias_id": "string",
 "state": "integer"
 }
 ```
@@ -31,14 +33,14 @@
  "user_data": {
   "type": "hasMany",
   "keys": {
-   "local": "id",
+   "local": "role_id",
    "foreign": "user_id"
   }
  },
  "cart": {
   "type": "hasMany",
   "keys": {
-    "local": "id",
+    "local": "role_id",
     "foreign": "user_id"
   }
  }
