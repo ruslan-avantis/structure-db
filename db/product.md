@@ -1,10 +1,12 @@
 # Товар
-В таблице товаров нет полей `image`, `description`, `seo`, `og`, `price` в связи с тем что эти данные выведены в отдельные таблицы 
+Здесь нет поля цены `price` по той причине что у цена динамическая и у товара может быть несколько поставщиков. Цены выведены в отдельную таблицу [price](https://github.com/pllano/db.json/blob/master/db/price.md)  которая генерируется в зависимости от наличия товаров у поставщиков поставщиков.
+
+В таблице товаров нет полей `image`, `description`, `seo`, `og` в связи с тем что эти данные выведены в отдельные таблицы 
 [image](https://github.com/pllano/db.json/blob/master/db/image.md), 
 [description](https://github.com/pllano/db.json/blob/master/db/description.md), 
 [seo](https://github.com/pllano/db.json/blob/master/db/seo.md), 
-[og](https://github.com/pllano/db.json/blob/master/db/og.md),
-[price](https://github.com/pllano/db.json/blob/master/db/price.md) 
+[og](https://github.com/pllano/db.json/blob/master/db/og.md)
+
 ## product - Таблица товара
 - `id` - integer - в других таблицах `product_id`
 - `type_id` - integer - id типа товара
