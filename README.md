@@ -29,24 +29,30 @@
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи 
 - [`user_data`](https://github.com/pllano/db.json/blob/master/db/user_data.md) - Данные пользователя
 - [`contact`](https://github.com/pllano/db.json/blob/master/db/contact.md) - Контактные данные
-- [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Сотрудники компании, поставщиков итд.
+- [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
 #### Корзина
 - [`cart`](https://github.com/pllano/db.json/blob/master/db/cart.md) - Корзина
 - [`order`](https://github.com/pllano/db.json/blob/master/db/order.md) - Заказы
 - [`pay`](https://github.com/pllano/db.json/blob/master/db/pay.md) - Оплаты
 #### Товары
 - [`product`](https://github.com/pllano/db.json/blob/master/db/product.md) - Товары
-- [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
-- [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания
 - [`type`](https://github.com/pllano/db.json/blob/master/db/type.md) - Типы товара
 - [`brand`](https://github.com/pllano/db.json/blob/master/db/brand.md) - Бренды
 - [`serie`](https://github.com/pllano/db.json/blob/master/db/serie.md) - Серии товара
-- [`complect`](https://github.com/pllano/db.json/blob/master/db/complect.md) - Комплекты: Товар состоит из ...
-- [`buytogether`](https://github.com/pllano/db.json/blob/master/db/buytogether.md) - Вместе дешевле
-- [`relevance`](https://github.com/pllano/db.json/blob/master/db/relevance.md) - Релевантность, Популярность, Рейтинг
+- [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
+- [`seo`](https://github.com/pllano/db.json/blob/master/db/seo.md) - SEO тексты
+- [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания
+#### Свойства товаров
+- [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
+- [`property`](https://github.com/pllano/db.json/blob/master/db/property.md) - Настройки и связи набора и списка свойств
+- [`property_set`](https://github.com/pllano/db.json/blob/master/db/property_set.md) - Наборы свойств
+- [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
+- [`property_value`](https://github.com/pllano/db.json/blob/master/db/property_value.md) - Значения свойств
 #### Цены на сайте
+- [`seller`](https://github.com/pllano/db.json/blob/master/db/seller.md) - Конфигурация продавца
 - [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
 - [`price_rule`](https://github.com/pllano/db.json/blob/master/db/price_rule.md) - Ценовые правила продавца
+- [`discount`](https://github.com/pllano/db.json/blob/master/db/discount.md) - Акции и скидки
 #### Прайс-листы
 - [`price_list`](https://github.com/pllano/db.json/blob/master/db/price_list.md) - Прайс-листы
 - [`price_list_rule`](https://github.com/pllano/db.json/blob/master/db/price_list_rule.md) - Ценовые правила
@@ -54,13 +60,37 @@
 - [`supplier`](https://github.com/pllano/db.json/blob/master/db/supplier.md) - Поставщики
 - [`supplier_currency`](https://github.com/pllano/db.json/blob/master/db/supplier_currency.md) - Курсы валют поставщиков
 - [`supplier_account`](https://github.com/pllano/db.json/blob/master/db/supplier_account.md) - Юр. лица поставщиков (связь с таблицей account)
-#### Свойства
-- [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
-- [`property`](https://github.com/pllano/db.json/blob/master/db/property.md) - Настройки и связи набора и списка свойств
-- [`property_set`](https://github.com/pllano/db.json/blob/master/db/property_set.md) - Наборы свойств
-- [`property_list`](https://github.com/pllano/db.json/blob/master/db/property_list.md) - Список свойств
-- [`property_value`](https://github.com/pllano/db.json/blob/master/db/property_value.md) - Значения свойств
+#### Контент
+- [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
+- [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
+
+### Дополнительно
+#### Отзывы
+При создании отзыва автоматически создается Тикет, что дает возможность проконтролировать реакцию персонала на отзывы клиентов.
+- [`review`](https://github.com/pllano/db.json/blob/master/db/review.md) - Отзывы и обзоры
+- [`comment`](https://github.com/pllano/db.json/blob/master/db/comment.md) - Коментарии
+- [`rating`](https://github.com/pllano/db.json/blob/master/db/rating.md) - Рейтинги: отзывов, коментарией итд.
+#### Адреса
+- База адресов может быть покупная или собираться автоматически в процессе работы сайта
+- [`location`](https://github.com/pllano/db.json/blob/master/db/location.md) - База адресов
+- [`country`](https://github.com/pllano/db.json/blob/master/db/country.md) - Страна
+- [`region`](https://github.com/pllano/db.json/blob/master/db/region.md) - Область (регион)
+- [`postal_code`](https://github.com/pllano/db.json/blob/master/db/postal_code.md) - Почтовый индекс
+- [`city`](https://github.com/pllano/db.json/blob/master/db/city.md) - Город (населенный пункт)
+- [`district`](https://github.com/pllano/db.json/blob/master/db/district.md) - Район города
+- [`street`](https://github.com/pllano/db.json/blob/master/db/street.md) - Улица
+#### Товары
+- [`complect`](https://github.com/pllano/db.json/blob/master/db/complect.md) - Комплекты: Товар состоит из ...
+- [`buytogether`](https://github.com/pllano/db.json/blob/master/db/buytogether.md) - Вместе дешевле
+- [`relevance`](https://github.com/pllano/db.json/blob/master/db/relevance.md) - Релевантность, Популярность, Рейтинг
+#### Маркетинг
+- [`customer`](https://github.com/pllano/db.json/blob/master/db/customer.md) - Клиенты
+- [`promo_code`](https://github.com/pllano/db.json/blob/master/db/promo_code.md) - Промо коды
+- [`discount_card`](https://github.com/pllano/db.json/blob/master/db/discount_card.md) - Дисконтные карты
+- [`special_offer`](https://github.com/pllano/db.json/blob/master/db/special_offer.md) - Специальные предложения
+- [`proposals`](https://github.com/pllano/db.json/blob/master/db/proposals.md) -  Предложения
 #### ERP
+- [`person`](https://github.com/pllano/db.json/blob/master/db/person.md) - Сотрудники компании, поставщиков итд.
 - [`invoice`](https://github.com/pllano/db.json/blob/master/db/invoice.md) - Счета
 - [`invoice_product`](https://github.com/pllano/db.json/blob/master/db/invoice_product.md) - Товары в счетах
 - [`invoice_product_status`](https://github.com/pllano/db.json/blob/master/db/invoice_product_status.md) - Статусы товаров
@@ -81,19 +111,12 @@
 - [`history_invoice`](https://github.com/pllano/db.json/blob/master/db/history_invoice.md) - История счетов
 - [`history_product`](https://github.com/pllano/db.json/blob/master/db/history_product.md) - История товаров
 - [`history_payment`](https://github.com/pllano/db.json/blob/master/db/history_payment.md) - История платежей
+- [`error`](https://github.com/pllano/db.json/blob/master/db/error.md) - Лог ошибок
+- [`redirect`](https://github.com/pllano/db.json/blob/master/db/redirect.md) - Редиректы
 #### API
 - [`api`](https://github.com/pllano/db.json/blob/master/db/api.md) - Ключи доступа к API
 - [`api_request`](https://github.com/pllano/db.json/blob/master/db/api_request.md) - Запросы к API
 - [`api_response`](https://github.com/pllano/db.json/blob/master/db/api_response.md) - Ответы сервисов на запрос к ихним API
-#### SEO
-- [`seo`](https://github.com/pllano/db.json/blob/master/db/seo.md) - SEO тексты
-- [`error`](https://github.com/pllano/db.json/blob/master/db/error.md) - Лог ошибок
-- [`redirect`](https://github.com/pllano/db.json/blob/master/db/redirect.md) - Редиректы
-#### Контент
-- [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
-- [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
-#### Конфигурация продавца
-- [`seller`](https://github.com/pllano/db.json/blob/master/db/seller.md) - Конфигурация продавца
 #### Тикет система - Связь
 - [`ticket`](https://github.com/pllano/db.json/blob/master/db/ticket.md) - Основная таблица тикет системы
 - [`ticket_category`](https://github.com/pllano/db.json/blob/master/db/ticket_category.md) - Категории тикетов
@@ -117,28 +140,6 @@
 - [`storage_bot`](https://github.com/pllano/db.json/blob/master/db/storage_bot.md) - Бот отвечающий по наличию товара
 - [`order_bot`](https://github.com/pllano/db.json/blob/master/db/order_bot.md) - Бот дает информацию по заказам
 - [`archive`](https://github.com/pllano/db.json/blob/master/db/archive.md) - Общий архив информации для всех ботов
-#### Отзывы
-При создании отзыва автоматически создается Тикет, что дает возможность проконтролировать реакцию персонала на отзывы клиентов.
-- [`review`](https://github.com/pllano/db.json/blob/master/db/review.md) - Отзывы и обзоры
-- [`comment`](https://github.com/pllano/db.json/blob/master/db/comment.md) - Коментарии
-- [`rating`](https://github.com/pllano/db.json/blob/master/db/rating.md) - Рейтинги: отзывов, коментарией итд.
-#### Маркетинг
-- [`discount`](https://github.com/pllano/db.json/blob/master/db/discount.md) - Акции и скидки
-- [`customer`](https://github.com/pllano/db.json/blob/master/db/customer.md) - Клиенты
-- [`promo_code`](https://github.com/pllano/db.json/blob/master/db/promo_code.md) - Промо коды
-- [`discount_card`](https://github.com/pllano/db.json/blob/master/db/discount_card.md) - Дисконтные карты
-- [`special_offer`](https://github.com/pllano/db.json/blob/master/db/special_offer.md) - Специальные предложения
-- [`proposals`](https://github.com/pllano/db.json/blob/master/db/proposals.md) -  Предложения
-#### Адреса
-- База адресов может быть покупная или собираться автоматически в процессе работы сайта
-- [`location`](https://github.com/pllano/db.json/blob/master/db/location.md) - База адресов
-- [`country`](https://github.com/pllano/db.json/blob/master/db/country.md) - Страна
-- [`region`](https://github.com/pllano/db.json/blob/master/db/region.md) - Область (регион)
-- [`postal_code`](https://github.com/pllano/db.json/blob/master/db/postal_code.md) - Почтовый индекс
-- [`city`](https://github.com/pllano/db.json/blob/master/db/city.md) - Город (населенный пункт)
-- [`district`](https://github.com/pllano/db.json/blob/master/db/district.md) - Район города
-- [`street`](https://github.com/pllano/db.json/blob/master/db/street.md) - Улица
-- [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
 
 ## Префиксы таблиц и полей
 Для дополнительной безопасности в начале названия таблиц или полей может быть указан префикс
