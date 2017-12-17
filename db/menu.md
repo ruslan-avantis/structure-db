@@ -7,7 +7,6 @@
 - `class` - string - Класс меню
 - `icon` - string - Иконка
 - `state` - integer - Выкл. = 0 или Вкл. = 1
- 
 ### `menu` schema - структура таблицы
 ```json
 {
