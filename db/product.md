@@ -1,10 +1,10 @@
 # Товар
-В таблице товаров нет полей `price`, `image`, `description`, `seo`, `og` в связи с тем что эти данные выведены в отдельные таблицы 
-[price](https://github.com/pllano/db.json/blob/master/db/price.md), 
+В таблице товаров нет полей `image`, `description`, `seo`, `og`, `price` в связи с тем что эти данные выведены в отдельные таблицы 
 [image](https://github.com/pllano/db.json/blob/master/db/image.md), 
 [description](https://github.com/pllano/db.json/blob/master/db/description.md), 
 [seo](https://github.com/pllano/db.json/blob/master/db/seo.md), 
-[og](https://github.com/pllano/db.json/blob/master/db/og.md)
+[og](https://github.com/pllano/db.json/blob/master/db/og.md),
+[price](https://github.com/pllano/db.json/blob/master/db/price.md) 
 ## product - Таблица товара
 - `id` - integer - в других таблицах `language_id`
 - `mod_id` - integer - id товара родителя обеденяющего группу товаров
