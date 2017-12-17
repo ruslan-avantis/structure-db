@@ -3,7 +3,7 @@
 - `id` - integer - в других таблицах `menu_id`
 - `parent_id` -integer - id родительский пункт меню по умолчанию `0`
 - `sort` - integer - Сортировка
-- `roles` - string - Роли через запятую которым разрешон доступ
+- `roles` - string - Роли через запятую которым разрешен доступ
 - `class` - string - Класс меню
 - `icon` - string - Иконка
 - `state` - integer - Выкл. = 0 или Вкл. = 1
