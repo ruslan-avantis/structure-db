@@ -17,8 +17,8 @@
 - `note` - string - краткое описания категории
 - `og_id` - og_id - Open Graph
 - `seo_id` - seo_id - Таблица SEO
-- `alias` - string - используется при формировании URL - генерируется `\Pllano\ApiShop\Core\Utility::get_alias($str, $charset = 'UTF-8');`
-- `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
+- `alias` - string - используется при формировании URL
+- `alias_id` - string - второй id в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
  
