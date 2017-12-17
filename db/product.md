@@ -14,6 +14,7 @@
 - `name` - string - полное название товара
 - `code` - integer - `GTIN` или `EAN` код
 - `intro` - integer - краткое описание
+- `template` - integer - индивидуальный шаблон страницы товара
 - `publish_beg` - integer - дата включения
 - `publish_end` - integer - дата выключения
 - `mod_id` - integer - id товара родителя обеденяющего несколько товаров в группу
@@ -32,6 +33,7 @@
 "name": "string",
 "code": "string",
 "intro": "string",
+"template": "string",
 "publish_beg": "string",
 "publish_beg": "string",
 "mod_id": "integer",
