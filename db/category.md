@@ -17,14 +17,12 @@
 - `image` - string - картинка категории
 - `text` - string - описания категории
 - `note` - string - краткое описания категории
-- `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
-- `canonical` - string - выводится `<link name="canonical" content="">`
 - `og_id` - og_id - Open Graph
-- `seo_id` - seo_id - SEO тексты
+- `seo_id` - seo_id - SEO плагин
 - `alias` - string - используется при формировании URL - генерируется `\Pllano\ApiShop\Core\Utility::get_alias($str, $charset = 'UTF-8');`
 - `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
  
- ### `category` schema - структура таблицы
+### `category` schema - структура таблицы
 ```json
 {
 "parent_id": "integer",
@@ -43,8 +41,6 @@
 "image": "string",
 "text": "string",
 "note": "string",
-"robots": "string",
-"canonical": "string",
 "seo_id": "integer",
 "og_id": "integer",
 "alias": "string",
