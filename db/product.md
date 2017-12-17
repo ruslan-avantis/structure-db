@@ -17,14 +17,15 @@
 - `code` - integer - `GTIN` или `EAN` код
 - `intro` - integer - краткое описание
 - `template` - integer - индивидуальный шаблон страницы товара
-- `publish_beg` - integer - дата включения
-- `publish_end` - integer - дата выключения
 - `mod_id` - integer - id товара родителя объединяющего несколько товаров в группу
 - `complect_id` - integer - входит в комплект `product_id` или нет `0`
 - `priority` - integer - приоритет искусственно поднимает в выдаче
 - `authorize` - integer - товар только для зарегистрированных пользователей
 - `alias` - integer - алиас
 - `state` - integer - статус
+- `publish_beg` - integer - дата включения
+- `publish_end` - integer - дата выключения
+- `created` - integer - дата создания
 ### `product` schema - структура таблицы
 ```json
 {
@@ -36,13 +37,14 @@
 "code": "string",
 "intro": "string",
 "template": "string",
-"publish_beg": "string",
-"publish_beg": "string",
 "mod_id": "integer",
 "complect_id": "integer",
 "priority": "integer",
 "authorize": "integer",
 "alias": "integer",
-"state": "integer"
+"state": "integer",
+"publish_beg": "string",
+"publish_beg": "string",
+"created": "string"
 }
 ```
