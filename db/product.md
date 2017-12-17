@@ -1,7 +1,7 @@
 # Товар
 Здесь нет поля цены `price` по той причине что товар это статическое явление, а цена динамическое и у товара может быть несколько поставщиков. Цены выведены в отдельную таблицу [price](https://github.com/pllano/db.json/blob/master/db/price.md)  которая генерируется в зависимости от наличия товаров в прайс-листах поставщиков. Система не предусматривает ручного обновления цен.
 
-В таблице товаров нет полей `image`, `description`, `seo`, `og` в связи с тем что эти данные выведены в отдельные таблицы 
+В таблице товаров нет полей `image`, `description`, `seo`, `og` в связи с тем что эти данные выведены в отдельные универсальные таблицы 
 [image](https://github.com/pllano/db.json/blob/master/db/image.md), 
 [description](https://github.com/pllano/db.json/blob/master/db/description.md), 
 [seo](https://github.com/pllano/db.json/blob/master/db/seo.md), 
