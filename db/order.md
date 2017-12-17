@@ -1,6 +1,7 @@
 # Заказы
 ## order
-- `id` - integer - в других таблицах `order_id`
+- `id` - integer - технический id
+- `order_id` - integer - основной id
 - `site_id` - integer - сайт
 - `order_type` - integer - тип заказа
 - `user_id` - integer - id пользователя
@@ -14,6 +15,7 @@
 ### `order` schema - структура таблицы
 ```json
 {
+"order_id": "integer",
 "site_id": "integer",
 "order_type": "integer",
 "user_id": "integer",
@@ -33,7 +35,7 @@
   "type": "belongsTo",
   "keys": {
    "local": "user_id",
-   "foreign": "id"
+   "foreign": "order_id"
   }
  }
 }
