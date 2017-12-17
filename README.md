@@ -17,9 +17,9 @@
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Мультисайтовость
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
-- [`currency`](https://github.com/pllano/db.json/blob/master/db/currency.md) - Валюты
 - [`category`](https://github.com/pllano/db.json/blob/master/db/category.md) - Категории
 - [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
+- [`currency`](https://github.com/pllano/db.json/blob/master/db/currency.md) - Валюты
 - [`account`](https://github.com/pllano/db.json/blob/master/db/account.md) - Счета
 - [`corporation`](https://github.com/pllano/db.json/blob/master/db/corporation.md) - Юридические лица
 #### Пользователи
@@ -237,7 +237,5 @@ if (file_exists($uri_db)){
 
 Лицензия db.json
 -------
-
 The MIT License (MIT). Please see [LICENSE](https://github.com/pllano/db.json/blob/master/LICENSE) for more information.
-
  
