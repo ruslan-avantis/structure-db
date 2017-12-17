@@ -28,7 +28,7 @@
 - [`serie`](https://github.com/pllano/db.json/blob/master/db/serie.md) - Серии товара
 - [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
 - [`seo`](https://github.com/pllano/db.json/blob/master/db/seo.md) - SEO тексты
-- [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания
+- [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания и тексты
 - [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
 - [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
 #### Пользователи
