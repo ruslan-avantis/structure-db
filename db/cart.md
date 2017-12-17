@@ -1,6 +1,7 @@
 # Корзина
 ## cart
-- `id` - integer - в других таблицах `cart_id`
+- `id` - integer - технический id
+- `cart_id` - integer - основной id
 - `site_id` - integer - сайт
 - `product_id` - integer - id товара
 - `order_id` - integer - id заказа 
@@ -16,6 +17,7 @@
 ### `cart` schema - структура таблицы
 ```json
 {
+"cart_id": "integer",
 "site_id": "integer",
 "product_id": "integer",
 "order_id": "integer",
@@ -37,7 +39,7 @@
   "type": "belongsTo",
   "keys": {
    "local": "order_id",
-   "foreign": "id"
+   "foreign": "cart_id"
   }
  }
 }
