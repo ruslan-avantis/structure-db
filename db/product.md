@@ -17,7 +17,7 @@
 - `publish_beg` - integer - дата включения
 - `publish_end` - integer - дата выключения
 - `mod_id` - integer - id товара родителя обеденяющего несколько товаров в группу
-- `complect_id` - integer - входит в комплект или нет `0` или `product_id`
+- `complect_id` - integer - входит в комплект `product_id` или нет `0`
 - `priority` - integer - приоритет подымает в выдаче
 - `authorize` - integer - товар только для зарегестрированных пользователей
 - `alias` - integer - алиас
