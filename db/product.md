@@ -8,7 +8,8 @@
 [og](https://github.com/pllano/db.json/blob/master/db/og.md)
 
 ## product - Таблица товара
-- `id` - integer - в других таблицах `product_id`
+- `id` - integer - технический id
+- `product_id` - integer - основной id
 - `type_id` - integer - id типа товара
 - `brand_id` - integer - id бренда
 - `serie_id` - integer - id серии
@@ -29,6 +30,7 @@
 ### `product` schema - структура таблицы
 ```json
 {
+"product_id": "integer",
 "type_id": "integer",
 "brand_id": "integer",
 "serie_id": "integer",
