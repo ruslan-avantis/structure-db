@@ -19,17 +19,8 @@
 - `note` - string - краткое описания категории
 - `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
 - `canonical` - string - выводится `<link name="canonical" content="">`
-- `seo_h1` - string - заменит автоматически сгенерированный
-- `seo_title` - string - заменит автоматически сгенерированный
-- `seo_keywords` - string - заменит автоматически сгенерированный
-- `seo_description` - string - заменит автоматически сгенерированный
-- `seo_text` - string - SEO текст, обычно выводится внизу
-- `og_title` - string - Open Graph выводится `<meta property="og:title" content="" />`
-- `og_description` - string - Open Graph выводится `<meta property="og:description" content="" />`
-- `og_image` - string - Open Graph выводится `<meta property="og:image" content="" />`
-- `og_url` - string - Open Graph выводится `<meta property="og:url" content="" />`
-- `og_locale` - string - Open Graph выводится `<meta property="og:locale" content="" />`
-- `og_type` - string - Open Graph выводится `<meta property="og:type" content="" />`
+- `og_id` - og_id - Open Graph
+- `seo_id` - seo_id - SEO тексты
 - `alias` - string - используется при формировании URL - генерируется `\Pllano\ApiShop\Core\Utility::get_alias($str, $charset = 'UTF-8');`
 - `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
  
@@ -54,17 +45,8 @@
 "note": "string",
 "robots": "string",
 "canonical": "string",
-"seo_h1": "string",
-"seo_title": "string",
-"seo_keywords": "string",
-"seo_description": "string",
-"seo_text": "string",
-"og_title": "string",
-"og_description": "string",
-"og_image": "string",
-"og_url": "string",
-"og_locale": "string",
-"og_type": "string",
+"seo_id": "integer",
+"og_id": "integer"
 "alias": "string",
 "alias_id": "string"
 }
