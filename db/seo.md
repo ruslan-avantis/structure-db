@@ -8,6 +8,9 @@
 - `seo_text` - string - SEO текст, обычно выводится внизу
 - `robots` - string - по умолчанию `index, follow` вывод `<meta name="robots" content="index, follow">`
 - `canonical` - string - выводится `<link name="canonical" content="">`
+- `sitemap_xml` - integer - выводить в sitemap
+- `sitemap_html` - integer - выводить в sitemap
+- `hreflang` - integer
 ### `seo` schema - структура таблицы
 ```json
 {
@@ -17,6 +20,9 @@
 "seo_description": "string",
 "seo_text": "string",
 "robots": "string",
-"canonical": "string"
+"canonical": "string",
+"sitemap_xml": "integer",
+"sitemap_html": "integer",
+"hreflang": "string"
 }
 ```
