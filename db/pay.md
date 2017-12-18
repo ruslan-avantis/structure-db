@@ -13,6 +13,7 @@
 - `created` - string - дата создания `2017-11-15 18:35`
 - `alias_id` - string - алиас
 - `state` - integer - статус `0` или `1`
+- `score` - integer - количество запросов
 ### `pay` schema - структура таблицы
 ```json
 {
@@ -27,7 +28,8 @@
 "date": "string",
 "created": "string",
 "alias_id": "string",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
 ### `pay` relations - связи
