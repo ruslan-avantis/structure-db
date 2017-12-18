@@ -16,8 +16,8 @@
 - `supplier_item_id` - integer - id цены в прайс-листе поставщика
 - `alias` - string - id алиас
 - `state` - integer - статус
-- `created` - string - дата создания
-- `modified` - string - дата изменения
+- `created` - datetime - дата создания
+- `modified` - datetime - дата изменения
 - `score` - integer - количество запросов
 ### `price` schema - структура таблицы
 ```json
@@ -37,8 +37,8 @@
 "supplier_item_id": "integer",
 "alias": "string",
 "state": "integer",
-"created": "string",
-"modified": "string",
+"created": "datetime",
+"modified": "datetime",
 "score": "string"
 }
 ```
