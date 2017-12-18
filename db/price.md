@@ -14,7 +14,7 @@
 - `terms_of_delivery` - string - условия доставки
 - `locking` - integer - запретить продажу
 - `supplier_item_id` - integer - id цены в прайс-листе поставщика
-- `alias_id` - string - id алиас
+- `alias` - string - id алиас
 - `state` - integer - статус
 - `created` - string - дата создания
 - `modified` - string - дата изменения
@@ -35,7 +35,7 @@
 "terms_of_delivery": "string",
 "locking": "integer",
 "supplier_item_id": "integer",
-"alias_id": "string",
+"alias": "string",
 "state": "integer",
 "created": "string",
 "modified": "string",
