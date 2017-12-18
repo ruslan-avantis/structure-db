@@ -16,6 +16,7 @@
 - `sitemap_xml` - integer - выводить в sitemap
 - `sitemap_html` - integer - выводить в sitemap
 - `hreflang` - integer
+- `score` - integer - количество запросов
 ### `seo` schema - структура таблицы
 ```json
 {
@@ -32,6 +33,7 @@
 "canonical": "string",
 "sitemap_xml": "integer",
 "sitemap_html": "integer",
-"hreflang": "string"
+"hreflang": "string",
+"score": "string"
 }
 ```
