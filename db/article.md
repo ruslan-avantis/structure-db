@@ -2,6 +2,7 @@
 ## article - Контент
 - `id` - integer - технический id
 - `article_id` - integer - основной id
+- `article_category_id` - integer - принадлежит категории
 - `title` - string - название статьи
 - `annotation` - string - краткое описание
 - `description_id` - integer - текст статьи
@@ -17,6 +18,7 @@
 ```json
 {
 "article_id": "integer",
+"article_category_id": "integer",
 "title": "string",
 "annotation": "string",
 "description_id": "integer",
@@ -27,5 +29,17 @@
 "created": "string",
 "sort": "integer",
 "state": "integer"
+}
+```
+### `article` schema - связи
+```json
+"relations": {
+"article_category": {
+"type": "belongsTo",
+"keys": {
+"local": "article_category_id",
+"foreign": "article_category_id"
+}
+}
 }
 ```
