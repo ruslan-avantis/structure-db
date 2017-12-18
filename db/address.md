@@ -20,6 +20,7 @@
 - `note` - string - примечание
 - `sort` - integer - сортировка
 - `state` - integer - статус
+- `score` - integer - количество запросов
 ### `address` schema - структура таблицы
 ```json
 {
@@ -40,6 +41,7 @@
 "additional": "string",
 "note": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
