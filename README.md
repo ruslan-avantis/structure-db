@@ -16,7 +16,7 @@
 - `double` — Число с плавающей точкой
 - `boolean` — Логический тип `true` или `false`
 
-## Структура базы состоит из 23 основных таблиц
+## Структура базы состоит из 24 основных таблиц
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Конфигурация сайта
 - [`localization`](https://github.com/pllano/db.json/blob/master/db/localization.md) - Список языков
