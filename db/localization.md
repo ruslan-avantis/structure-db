@@ -6,6 +6,7 @@
 ## localization - Локализация
 - `id` - integer - технический id
 - `localization_id` - integer - основной id
+- `language_id` - integer - id языка
 - `site_id` - integer - id сайта
 - `state` - integer - Выкл. = 0 или Вкл. = 1
 - `en` - string - English
@@ -29,7 +30,9 @@
 ### `localization` schema - структура таблицы
 ```json
 {
+"localization_id": "integer",
 "language_id": "integer",
+"site_id": "integer",
 "state": "integer",
 "en": "string",
 "ua": "string",
