@@ -11,8 +11,6 @@
 [og](https://github.com/pllano/db.json/blob/master/db/og.md),
 [price](https://github.com/pllano/db.json/blob/master/db/price.md)
 
-Мы вывели разработку структуры базы данных для [api-json-db](https://github.com/pllano/api-json-db) в отдельный репозиторий.
-
 Если вам подходит наша структура базы данных, вы может использовать ее в своих проектах.
 
 ## Мы очень верим в то что вы поможете ее усовершенствовать !
