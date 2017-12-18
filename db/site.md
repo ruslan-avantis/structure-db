@@ -59,7 +59,21 @@
 ### `site` schema - связи
 ```json
 "relations": {
- "user": {
+ "product": {
+  "type": "hasMany",
+  "keys": {
+   "local": "site_id",
+   "foreign": "site_id"
+  }
+ },
+  "category": {
+  "type": "hasMany",
+  "keys": {
+   "local": "site_id",
+   "foreign": "site_id"
+  }
+ },
+  "order": {
   "type": "hasMany",
   "keys": {
    "local": "site_id",
