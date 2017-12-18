@@ -48,7 +48,7 @@
 - [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
 - [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
 
-## и 70+ дополнительных таблиц
+## В разработке еще 70+ дополнительных таблиц
 #### Глобальные
 - [`menu`](https://github.com/pllano/db.json/blob/master/db/menu.md) - Меню
 - [`account`](https://github.com/pllano/db.json/blob/master/db/account.md) - Счета
