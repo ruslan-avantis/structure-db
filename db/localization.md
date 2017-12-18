@@ -9,6 +9,7 @@
 - `language_id` - integer - id языка
 - `site_id` - integer - id сайта
 - `state` - integer - Выкл. = 0 или Вкл. = 1
+- `score` - integer - количество запросов
 - `en` - string - English
 - `ua` - string - Українська
 - `ru` - string - Русский
@@ -34,6 +35,7 @@
 "language_id": "integer",
 "site_id": "integer",
 "state": "integer",
+"score": "integer",
 "en": "string",
 "ua": "string",
 "ru": "string",
