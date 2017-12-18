@@ -11,7 +11,7 @@
 - `conditions_id` - integer - id контракта
 - `seller_id` - integer - id продавца
 - `state` - integer - статус
-- `alias_id` - string - алиас
+- `alias` - string - алиас
 - `score` - integer - количество запросов
 ### `order` schema - структура таблицы
 ```json
@@ -26,7 +26,7 @@
 "conditions_id": "integer",
 "seller_id": "integer",
 "state": "integer",
-"alias_id": "string",
+"alias": "string",
 "score": "integer"
 }
 ```
