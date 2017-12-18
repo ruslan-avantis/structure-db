@@ -9,7 +9,7 @@
 ## Мы очень верим в то что вы поможете ее усовершенствовать !
 ### Использование в API Shop
 - Скачайте файл [db.json](https://github.com/pllano/db.json/blob/master/db.json) отредактируйте его если вы хотите внести свои дополнения.
-- Скопируйте файл в папку `ваша_бд`/`core`/ и [API Shop](https://github.com/pllano/api-shop) автоматически создаст новые таблицы.
+- Скопируйте файл в папку `ваша_бд`/`core`/ и база данных [api-json-db](https://github.com/pllano/api-json-db) или [API Shop](https://github.com/pllano/api-shop) автоматически создаст новые таблицы.
 ### Поддерживаемые типы данных в db.json
 - `integer` — Целое число	
 - `string` — Строка
