@@ -19,7 +19,9 @@
 ## Структура базы состоит из 23 основных таблиц
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Конфигурация сайта
+- [`localization`](https://github.com/pllano/db.json/blob/master/db/localization.md) - Список языков
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
+
 #### Товары
 - [`category`](https://github.com/pllano/db.json/blob/master/db/category.md) - Категории
 - [`product`](https://github.com/pllano/db.json/blob/master/db/product.md) - Товары
