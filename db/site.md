@@ -23,7 +23,7 @@
 - `currency_id` - integer - валюта. По умолчанию `1` = `UAH`, `грн.`
 - `prefix_invoice` - string - Префикс в счетах. По умолчанию `APISHOP_`
 - `vat_tax` - double - НДС в счетах. По умолчанию 0.00 `%`
-- `alias_id` - string - второй id созданный `\Pllano\ApiShop\Core\Utility::random_alias_id();` в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
+- `alias` - string - второй id созданный в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `score` - integer - количество запросов
 
 ## На рассмотрении
@@ -54,7 +54,7 @@
 "currency_id": "integer",
 "prefix_invoice": "string",
 "vat_tax": "double",
-"alias_id": "string",
+"alias": "string",
 "score": "string"
 }
 ```
