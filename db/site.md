@@ -56,3 +56,15 @@
 "alias_id": "string"
 }
 ```
+### `site` schema - связи
+```json
+"relations": {
+ "user": {
+  "type": "hasMany",
+  "keys": {
+   "local": "site_id",
+   "foreign": "site_id"
+  }
+ }
+}
+```
