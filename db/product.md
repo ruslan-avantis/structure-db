@@ -24,9 +24,9 @@
 - `authorize` - integer - товар только для зарегистрированных пользователей
 - `alias` - integer - алиас
 - `state` - integer - статус
-- `publish_beg` - integer - дата включения
-- `publish_end` - integer - дата выключения
-- `created` - integer - дата создания
+- `publish_beg` - datetime - дата включения
+- `publish_end` - datetime - дата выключения
+- `created` - datetime - дата создания
 - `score` - integer - количество запросов
 ### `product` schema - структура таблицы
 ```json
@@ -46,9 +46,9 @@
 "authorize": "integer",
 "alias": "integer",
 "state": "integer",
-"publish_beg": "string",
-"publish_beg": "string",
-"created": "string",
+"publish_beg": "datetime",
+"publish_beg": "datetime",
+"created": "datetime",
 "score": "string"
 }
 ```
