@@ -10,7 +10,7 @@
 - `related` - string - бренды с похожими товарами
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
-
+- `score` - integer - количество запросов
 ### `brand` schema - структура таблицы
 ```json
 {
@@ -22,6 +22,7 @@
 "alias": "string",
 "related": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "string"
 }
 ```
