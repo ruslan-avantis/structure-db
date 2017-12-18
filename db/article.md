@@ -10,7 +10,7 @@
 - `og_id` - integer - таблица og
 - `image_id` - integer - таблица image
 - `alias` - string - алиас для URL
-- `created` - string - дата создания
+- `created` - datetime - дата создания
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
 - `score` - integer - количество запросов
@@ -26,7 +26,7 @@
 "og_id": "integer",
 "image_id": "integer",
 "alias": "string",
-"created": "string",
+"created": "datetime",
 "sort": "integer",
 "state": "integer",
 "score": "integer"
