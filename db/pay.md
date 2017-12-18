@@ -11,7 +11,7 @@
 - `sum` - double - сумма платежа `0.00`
 - `date` - string - дата проведения платежа `2017-11-15 18:35`
 - `created` - string - дата создания `2017-11-15 18:35`
-- `alias_id` - string - алиас
+- `alias` - string - алиас
 - `state` - integer - статус `0` или `1`
 - `score` - integer - количество запросов
 ### `pay` schema - структура таблицы
@@ -27,7 +27,7 @@
 "sum": "double",
 "date": "string",
 "created": "string",
-"alias_id": "string",
+"alias": "string",
 "state": "integer",
 "score": "integer"
 }
