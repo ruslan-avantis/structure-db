@@ -14,6 +14,9 @@
 [og](https://github.com/pllano/db.json/blob/master/db/og.md),
 [price](https://github.com/pllano/db.json/blob/master/db/price.md)
 
+Необходимо максимально группировать данные с потенциально большим объемом. 
+- Пример: Тексты, Картинки - одна таблица текстов и одна таблица картинок для всей базы данных.
+
 ## Мы очень верим в то что вы поможете ее усовершенствовать !
 ### Использование в API Shop
 - Скачайте файл [db.json](https://github.com/pllano/db.json/blob/master/db.json) отредактируйте его если вы хотите внести свои дополнения.
