@@ -22,6 +22,7 @@
 - `alias_id` - string - второй id в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
+- `score` - integer - количество запросов
  
 ### `category` schema - структура таблицы
 ```json
@@ -46,6 +47,7 @@
 "alias": "string",
 "alias_id": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
