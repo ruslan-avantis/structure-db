@@ -1,4 +1,4 @@
-{
+[{
 	"table": "site",
 	"action": "create",
 	"schema": {
@@ -659,4 +659,4 @@
 		"state": "integer",
 		"score": "integer"
 	}
-}
+}]
