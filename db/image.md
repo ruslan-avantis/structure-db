@@ -10,6 +10,7 @@
 - `alias` - string - алиас
 - `sort` - integer - сортировка
 - `state` - integer - статус
+- `score` - integer - количество запросов
 ### `image` schema - структура таблицы
 ```json
 {
@@ -20,6 +21,7 @@
 "image_path": "string",
 "sort": "integer",
 "alias": "string",
-"state": "integer"
+"state": "integer",
+"score": "string"
 }
 ```
