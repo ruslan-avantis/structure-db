@@ -12,7 +12,7 @@
 - `course_br` - string - покупка `UAH=1.00`
 - `course_ar` - string - продажа `UAH=1.00`
 - `modified` - string - дата и время обновления курса
- 
+ - `score` - integer - количество запросов
 ### `currency` schema - структура таблицы
 ```json
 {
@@ -26,7 +26,8 @@
 "course": "double",
 "course_br": "double",
 "course_ar": "double",
-"modified": "string"
+"modified": "string",
+"score": "integer"
 }
 ```
  
