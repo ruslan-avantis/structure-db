@@ -7,7 +7,7 @@
 - `site_id` - integer - сайт
 - `table_name` - integer - название таблицы `product`, `article`
 - `unit_id` - integer - id записи
-- `text` - string - текст
+- `text` - text - текст
 - `sort` - integer - сортировка
 - `state` - integer - статус
 - `score` - integer - количество запросов
@@ -18,7 +18,7 @@
 "site_id": "integer",
 "table_name": "string",
 "unit_id": "integer",
-"text": "string",
+"text": "text",
 "sort": "integer",
 "state": "integer",
 "score": "string"
