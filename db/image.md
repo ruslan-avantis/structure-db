@@ -7,7 +7,7 @@
 - `table_name` - string - название таблицы `product`
 - `unit_id` - integer - id записи
 - `image_path` - string - локальный URL
-- `alias` - string - алиас
+- `alias` - string - алиас для URL
 - `sort` - integer - сортировка
 - `state` - integer - статус
 - `score` - integer - количество запросов
