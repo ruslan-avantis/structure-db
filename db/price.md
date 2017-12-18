@@ -18,7 +18,7 @@
 - `state` - integer - статус
 - `created` - string - дата создания
 - `modified` - string - дата изменения
-
+- `score` - integer - количество запросов
 ### `price` schema - структура таблицы
 ```json
 {
@@ -38,7 +38,8 @@
 "alias_id": "string",
 "state": "integer",
 "created": "string",
-"modified": "string"
+"modified": "string",
+"score": "string"
 }
 ```
 
