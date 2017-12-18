@@ -202,7 +202,7 @@
 			"site_id": "integer",
 			"table_name": "string",
 			"unit_id": "integer",
-			"text": "string",
+			"text": "text",
 			"sort": "integer",
 			"state": "integer",
 			"score": "integer"
