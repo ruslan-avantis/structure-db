@@ -14,6 +14,7 @@
 - `seller_id` - integer - id продавца
 - `price_id` - integer - id в прайс-листе продавца
 - `state` - integer - статус
+- `score` - integer - количество запросов
 ### `cart` schema - структура таблицы
 ```json
 {
@@ -29,7 +30,8 @@
 "price_list_id": "integer",
 "seller_id": "integer",
 "price_id": "integer",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
 ### `cart` relations - связи
