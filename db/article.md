@@ -13,7 +13,7 @@
 - `created` - string - дата создания
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
-
+- `score` - integer - количество запросов
 ### `article` schema - структура таблицы
 ```json
 {
@@ -28,7 +28,8 @@
 "alias": "string",
 "created": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
 ### `article` schema - связи
