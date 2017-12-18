@@ -18,10 +18,12 @@
 - Скачайте файл [db.json](https://github.com/pllano/db.json/blob/master/db.json) отредактируйте его если вы хотите внести свои дополнения.
 - Скопируйте файл в папку `ваша_бд`/`core`/ и база данных [api-json-db](https://github.com/pllano/api-json-db) или [API Shop](https://github.com/pllano/api-shop) автоматически создаст новые таблицы.
 ### Поддерживаемые типы данных в db.json
-- `integer` — Целое число	
-- `string` — Строка
-- `double` — Число с плавающей точкой
 - `boolean` — Логический тип `true` или `false`
+- `integer` — Целое число
+- `double` — Число с плавающей точкой
+- `string` — Строка
+- `text` — Текст (Строка)
+- `datetime` — Дата (Строка)
 
 ## Структура базы состоит из 24 основных таблиц
 #### Глобальные
@@ -187,6 +189,8 @@ if (file_exists($uri_db)){
                                 $value == "integer" || $value == "double") {
                                 // Конвертируем тип
                                 $value = str_replace("boolean", "CHAR( 5 ) NOT NULL DEFAULT ''", $value);
+                                $value = str_replace("text", "TEXT NOT NULL DEFAULT ''", $value);
+                                $value = str_replace("datetime", "DATETIME NOT NULL", $value);
                                 $value = str_replace("string", "VARCHAR( 255 ) NOT NULL DEFAULT ''", $value);
                                 $value = str_replace("integer", "INT( 11 ) NOT NULL DEFAULT '0'", $value);
                                 $value = str_replace("double", "FLOAT( 11, 2 ) NOT NULL DEFAULT '0.00'", $value);
