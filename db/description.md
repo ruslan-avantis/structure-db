@@ -10,7 +10,7 @@
 - `text` - string - текст
 - `sort` - integer - сортировка
 - `state` - integer - статус
-
+- `score` - integer - количество запросов
 ### `description` schema - структура таблицы
 ```json
 {
@@ -20,6 +20,7 @@
 "unit_id": "integer",
 "text": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "string"
 }
 ```
