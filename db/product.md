@@ -27,6 +27,7 @@
 - `publish_beg` - integer - дата включения
 - `publish_end` - integer - дата выключения
 - `created` - integer - дата создания
+- `score` - integer - количество запросов
 ### `product` schema - структура таблицы
 ```json
 {
@@ -47,6 +48,7 @@
 "state": "integer",
 "publish_beg": "string",
 "publish_beg": "string",
-"created": "string"
+"created": "string",
+"score": "string"
 }
 ```
