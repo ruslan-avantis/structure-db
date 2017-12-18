@@ -13,8 +13,8 @@
 ### `image` schema - структура таблицы
 ```json
 {
-"site_id": "integer",
 "image_id": "integer",
+"site_id": "integer",
 "table_name": "string",
 "unit_id": "integer",
 "image_path": "string",
