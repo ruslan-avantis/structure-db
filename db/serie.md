@@ -9,7 +9,7 @@
 - `alias` - string - алиас для URL
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
-
+- `score` - integer - количество запросов
 ### `serie` schema - структура таблицы
 ```json
 {
@@ -20,6 +20,7 @@
 "og_id": "integer",
 "alias": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "string"
 }
 ```
