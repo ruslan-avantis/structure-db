@@ -11,6 +11,7 @@
 - `value_plus` - string - дополнительное значение
 - `sort` - integer - сортировка
 - `state` - integer - статус
+- `score` - integer - количество запросов
 ### `contact` schema - структура таблицы
 ```json
 {
@@ -22,6 +23,7 @@
 "value": "string",
 "value_plus": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
