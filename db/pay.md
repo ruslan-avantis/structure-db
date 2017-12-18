@@ -9,8 +9,8 @@
 - `payment_system` - string - название банка или платежной системы
 - `sign` - string - знак операции `+` или `-`
 - `sum` - double - сумма платежа `0.00`
-- `date` - string - дата проведения платежа `2017-11-15 18:35`
-- `created` - string - дата создания `2017-11-15 18:35`
+- `date` - datetime - дата проведения платежа `2017-11-15 18:35`
+- `created` - datetime - дата создания `2017-11-15 18:35`
 - `alias` - string - алиас
 - `state` - integer - статус `0` или `1`
 - `score` - integer - количество запросов
@@ -25,8 +25,8 @@
 "payment_system": "string",
 "sign": "string",
 "sum": "double",
-"date": "string",
-"created": "string",
+"date": "datetime",
+"created": "datetime",
 "alias": "string",
 "state": "integer",
 "score": "integer"
