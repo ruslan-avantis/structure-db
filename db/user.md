@@ -11,7 +11,7 @@
 - `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption). Для того чтобы усложнить подмену cookie и убрать лишние запросы к базе. Сначала пробуем расшифровать cookie. Если не можем расшифровать, значит идет подмена cookie. Отказываем в доступе и записываем IP адрес в черный список при повторении блокируем.
 - `alias_id` - string - Второй id в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `state` - Статус 1 активный или 0 неактивный
-
+- `score` - integer - количество запросов
 ### `user` schema - структура таблицы
 ```json
 {
@@ -24,7 +24,8 @@
 "language": "string",
 "cookie": "string",
 "alias_id": "string",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
 ### `user` relations - связи
