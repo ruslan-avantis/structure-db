@@ -7,7 +7,7 @@
 - `iname` - string - Внутреннее название
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = 1
-
+- `score` - integer - количество запросов
 ### `role` schema - структура таблицы
 ```json
 {
@@ -16,7 +16,8 @@
 "ename": "string",
 "iname": "string",
 "sort": "integer",
-"state": "integer"
+"state": "integer",
+"score": "integer"
 }
 ```
 ### `role` relations - связи
