@@ -23,7 +23,8 @@
 		"currency_id": "integer",
 		"prefix_invoice": "string",
 		"vat_tax": "double",
-		"alias_id": "string"
+		"alias_id": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"product": {
@@ -72,7 +73,8 @@
 		"hi": "string",
 		"bn": "string",
 		"pt": "string",
-		"jp": "string"
+		"jp": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"user": {
@@ -90,7 +92,8 @@
 		"language_id": "integer",
 		"name": "string",
 		"site_id": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	}
 }, {
 	"table": "category",
@@ -116,7 +119,8 @@
 		"alias": "string",
 		"alias_id": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	}
 }, {
 	"table": "product",
@@ -139,7 +143,8 @@
 		"state": "integer",
 		"publish_beg": "string",
 		"publish_beg": "string",
-		"created": "string"
+		"created": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"type": {
@@ -213,7 +218,8 @@
 		"alias": "string",
 		"related": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"product": {
@@ -243,7 +249,8 @@
 		"alias": "string",
 		"related": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	}
 }, {
 	"table": "serie",
@@ -256,7 +263,8 @@
 		"og_id": "integer",
 		"alias": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"brand": {
@@ -278,7 +286,8 @@
 		"image_path": "string",
 		"sort": "integer",
 		"alias": "string",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"product": {
@@ -306,7 +315,8 @@
 		"canonical": "string",
 		"sitemap_xml": "integer",
 		"sitemap_html": "integer",
-		"hreflang": "string"
+		"hreflang": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"product": {
@@ -327,7 +337,8 @@
 		"unit_id": "integer",
 		"text": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"product": {
@@ -358,7 +369,8 @@
 		"alias_id": "string",
 		"state": "integer",
 		"created": "string",
-		"modified": "string"
+		"modified": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"product": {
@@ -375,7 +387,8 @@
 	"schema": {
 		"user_id": "integer",
 		"user_data_id": "integer",
-		"alias": "string"
+		"alias": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"user": {
@@ -395,7 +408,8 @@
 		"ename": "string",
 		"iname": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"user": {
@@ -419,7 +433,8 @@
 		"language": "string",
 		"cookie": "string",
 		"alias_id": "string",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"user_data": {
@@ -446,7 +461,8 @@
 		"ticketed": "integer",
 		"admin_access": "integer",
 		"alias_id": "string",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"user": {
@@ -469,7 +485,8 @@
 		"value": "string",
 		"value_plus": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	}
 }, {
 	"table": "address",
@@ -492,7 +509,8 @@
 		"additional": "string",
 		"note": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	}
 }, {
 	"table": "currency",
@@ -508,7 +526,8 @@
 		"course": "double",
 		"course_br": "double",
 		"course_ar": "double",
-		"modified": "string"
+		"modified": "string",
+		"score": "integer"
 	}
 }, {
 	"table": "cart",
@@ -526,7 +545,8 @@
 		"price_list_id": "integer",
 		"seller_id": "integer",
 		"price_id": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"order": {
@@ -551,7 +571,8 @@
 		"conditions_id": "integer",
 		"seller_id": "integer",
 		"state": "integer",
-		"alias_id": "string"
+		"alias_id": "string",
+		"score": "integer"
 	},
 	"relations": {
 		"user": {
@@ -577,7 +598,8 @@
 		"date": "string",
 		"created": "string",
 		"alias_id": "string",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"user": {
@@ -610,7 +632,8 @@
 		"alias": "string",
 		"created": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	},
 	"relations": {
 		"article_category": {
@@ -633,7 +656,7 @@
 		"alias": "string",
 		"created": "string",
 		"sort": "integer",
-		"state": "integer"
+		"state": "integer",
+		"score": "integer"
 	}
 }
- 
