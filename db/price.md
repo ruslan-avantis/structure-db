@@ -5,8 +5,8 @@
 - `site_id` - integer - id сайта
 - `product_id` - integer - id товара
 - `category_id` - integer - id категории
-- `price` - double - артикул
-- `oldprice` - double - артикул
+- `price` - double - текущая цена
+- `oldprice` - double - цена до (по умолчанию 0.00)
 - `currency_id` - integer - валюта
 - `pay_online` - integer - возможна оплата онлайн
 - `available` - integer - количество в наличии
