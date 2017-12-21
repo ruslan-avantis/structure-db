@@ -52,17 +52,16 @@
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Конфигурация сайта
 - [`localization`](https://github.com/pllano/db.json/blob/master/db/localization.md) - Список языков
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
-
 #### Товары
+- [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Товары для вывода на сайте
 - [`category`](https://github.com/pllano/db.json/blob/master/db/category.md) - Категории
-- [`product`](https://github.com/pllano/db.json/blob/master/db/product.md) - Товары
+- [`product`](https://github.com/pllano/db.json/blob/master/db/product.md) - Товары (Виртуальный каталог)
 - [`type`](https://github.com/pllano/db.json/blob/master/db/type.md) - Типы товара
 - [`brand`](https://github.com/pllano/db.json/blob/master/db/brand.md) - Бренды
 - [`serie`](https://github.com/pllano/db.json/blob/master/db/serie.md) - Серии товара
 - [`images`](https://github.com/pllano/db.json/blob/master/db/images.md) - Изображения
 - [`seo`](https://github.com/pllano/db.json/blob/master/db/seo.md) - SEO тексты
 - [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания и тексты
-- [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
 - [`params`](https://github.com/pllano/db.json/blob/master/db/params.md) - Свойства товара
 #### Пользователи
 - [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
