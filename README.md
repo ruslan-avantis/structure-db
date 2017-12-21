@@ -59,11 +59,11 @@
 - [`type`](https://github.com/pllano/db.json/blob/master/db/type.md) - Типы товара
 - [`brand`](https://github.com/pllano/db.json/blob/master/db/brand.md) - Бренды
 - [`serie`](https://github.com/pllano/db.json/blob/master/db/serie.md) - Серии товара
-- [`image`](https://github.com/pllano/db.json/blob/master/db/image.md) - Картинки
+- [`images`](https://github.com/pllano/db.json/blob/master/db/images.md) - Изображения
 - [`seo`](https://github.com/pllano/db.json/blob/master/db/seo.md) - SEO тексты
 - [`description`](https://github.com/pllano/db.json/blob/master/db/description.md) - Описания и тексты
 - [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Прайс-листы продавца для вывода на сайте
-- [`property_product`](https://github.com/pllano/db.json/blob/master/db/property_product.md) - Свойства товара
+- [`params`](https://github.com/pllano/db.json/blob/master/db/params.md) - Свойства товара
 #### Пользователи
 - [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи
