@@ -10,7 +10,7 @@
 - `property_value_id` - integer - id значения
 - `state` - integer - id
 - `score` - integer - количество запросов
-### `property_product` schema - структура таблицы
+### `params` schema - структура таблицы
 ```json
 {
 "param_id": "integer",
