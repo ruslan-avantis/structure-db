@@ -1,5 +1,5 @@
 # Пользователь
-## user
+## Ресурс `user`
 - `id` - integer - технический id
 - `user_id` - integer - основной id
 - `role_id` - integer - Роль пользователя по умолчанию `role_id=1` (покупатель)
@@ -19,7 +19,7 @@
 - `state` - Статус 1 активный или 0 неактивный
 - `score` - integer - количество запросов
 
-### `user` schema - структура таблицы
+### `user` schema - структура ресурса
 ```json
 {
 "user_id": "string",
