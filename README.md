@@ -66,7 +66,6 @@
 #### Пользователи
 - [`role`](https://github.com/pllano/db.json/blob/master/db/role.md) - Роли пользователей
 - [`user`](https://github.com/pllano/db.json/blob/master/db/user.md) - Пользователи
-- [`user_data`](https://github.com/pllano/db.json/blob/master/db/user_data.md) - Данные пользователя
 - [`contact`](https://github.com/pllano/db.json/blob/master/db/contact.md) - Контактные данные
 - [`address`](https://github.com/pllano/db.json/blob/master/db/address.md) - Адреса
 #### Корзина
