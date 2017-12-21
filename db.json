@@ -8,7 +8,7 @@
 			"uri": "string",
 			"type": "string",
 			"param": "string",
-			"created": "datatime"
+			"created": "datetime"
 		}
 	}, {
 		"table": "language",
