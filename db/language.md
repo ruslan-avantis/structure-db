@@ -1,22 +1,17 @@
-# Мультиязычность
-Мультиязычность может быть реализована двумя путями:
-- Таблицей `localization` в базе данных
-- Файлами language.json в папке `/app/localization`
+# Мультиязычность `language`
+### По умолчанию
 
-## localization - Локализация
 - `id` - integer - технический id
-- `localization_id` - integer - основной id
-- `language_id` - integer - id языка
-- `site_id` - integer - id сайта
 - `state` - integer - Выкл. = 0 или Вкл. = 1
-- `score` - integer - количество запросов
 - `en` - string - English
 - `ua` - string - Українська
 - `ru` - string - Русский
+- `de` - string - Deutsch
+
+### Дополнительно
 - `be` - string - Беларускі
 - `kk` - string - Қазақша
 - `ka` - string - ქართული
-- `de` - string - Deutsch
 - `fr` - string - Français
 - `pl` - string - Polski
 - `it` - string - Italiano
@@ -28,14 +23,21 @@
 - `pt` - string - Portugues
 - `jp` - string - 日本語
  
-### `localization` schema - структура таблицы
+## `language` schema - структура таблицы
+### По умолчанию
 ```json
 {
-"localization_id": "integer",
-"language_id": "integer",
-"site_id": "integer",
 "state": "integer",
-"score": "integer",
+"en": "string",
+"ua": "string",
+"ru": "string",
+"de": "string"
+}
+```
+### Дополнительно
+```json
+{
+"state": "integer",
 "en": "string",
 "ua": "string",
 "ru": "string",
