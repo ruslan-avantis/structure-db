@@ -50,7 +50,6 @@
 ## Структура базы состоит из 24 основных ресурсов
 #### Глобальные
 - [`site`](https://github.com/pllano/db.json/blob/master/db/site.md) - Конфигурация сайта
-- [`localization`](https://github.com/pllano/db.json/blob/master/db/localization.md) - Список языков
 - [`language`](https://github.com/pllano/db.json/blob/master/db/language.md) - Мультиязычность
 #### Товары
 - [`price`](https://github.com/pllano/db.json/blob/master/db/price.md) - Товары для вывода на сайте
