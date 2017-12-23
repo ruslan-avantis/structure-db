@@ -1,7 +1,7 @@
 # Мультиязычность `language`
 ### По умолчанию
 
-- `id` - integer - технический id
+- `id` - integer - id
 - `state` - integer - Выкл. = 0 или Вкл. = 1
 - `en` - string - English
 - `ua` - string - Українська
