@@ -13,7 +13,8 @@
 - `iname` - string - Имя
 - `fname` - string - Фамилия
 - `oname` - string - Отчество
-- `created` - datatime - Дата создания
+- `created` - datetime - Дата создания
+- `authorized` - datetime - Дата последней авторизации
 - `cookie` - string - Cookies пользователя установленные `setcookie();` зашифрованные [defuse/php-encryption](https://github.com/defuse/php-encryption). Для того чтобы усложнить подмену cookie и убрать лишние запросы к базе. Сначала пробуем расшифровать cookie. Если не можем расшифровать, значит идет подмена cookie. Отказываем в доступе и записываем IP адрес в черный список при повторении блокируем.
 - `alias` - string - Второй id в виде 12 случайных символов (Пример: 2fd4f3fbd83f)
 - `state` - Статус 1 активный или 0 неактивный
@@ -35,7 +36,8 @@
 "fname": "string",
 "oname": "string",
 "cookie": "string",
-"created": "datatime",
+"created": "datetime",
+"authorized": "datetime",
 "alias": "string",
 "state": "integer",
 "score": "integer"
