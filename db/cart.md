@@ -2,8 +2,8 @@
 ## cart
 - `id` - integer - технический id
 - `cart_id` - integer - основной id
-- `user_id` - integer - id пользователя
-- `cookie` - string - cookie пользователя
+- `user_id` - integer - id пользователя (если пользователь авторизован)
+- `cookie` - string - cookie пользователя (если пользователь не авторизован)
 - `site_id` - integer - сайт
 - `product_id` - integer - id товара
 - `order_id` - integer - id заказа 
