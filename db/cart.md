@@ -2,6 +2,7 @@
 ## cart
 - `id` - integer - технический id
 - `cart_id` - integer - основной id
+- `cookie` - string - cookie пользователя
 - `site_id` - integer - сайт
 - `product_id` - integer - id товара
 - `order_id` - integer - id заказа 
@@ -19,6 +20,7 @@
 ```json
 {
 "cart_id": "integer",
+"cookie": "string",
 "site_id": "integer",
 "product_id": "integer",
 "order_id": "integer",
