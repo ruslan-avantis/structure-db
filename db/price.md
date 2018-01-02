@@ -1,11 +1,14 @@
 # Цены
+- Добавлено поле `name` - чтобы уменьшить количество запросов при выводе списка товаров
+- Добавлено поле `template` - дающее возможность реализовать индивидуальный дизайн страницы каждого товара в стиле Landing Page
 ## price - Таблица цен
 - `id` - integer - технический id
 - `price_id` - integer - основной id
-- `template` - string - индивидуальный шаблон страницы товара
 - `site_id` - integer - id сайта
 - `product_id` - integer - id товара
 - `category_id` - integer - id категории
+- `template` - string - индивидуальный шаблон страницы товара
+- `name` - string - Название товара
 - `price` - double - текущая цена
 - `oldprice` - double - цена до (по умолчанию 0.00)
 - `currency_id` - integer - валюта
@@ -24,10 +27,11 @@
 ```json
 {
 "price_id": "integer",
-"template": "string",
 "site_id": "integer",
 "product_id": "integer",
 "category_id": "integer",
+"template": "string",
+"name": "string",
 "price": "double",
 "oldprice": "double",
 "currency_id": "integer",
