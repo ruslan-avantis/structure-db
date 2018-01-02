@@ -15,18 +15,18 @@
 - `serie_id` - integer - id серии
 - `articul` - string - артикул
 - `name` - string - полное название товара
-- `code` - integer - `GTIN` или `EAN` код
-- `intro` - integer - краткое описание
-- `template` - integer - индивидуальный шаблон страницы товара
+- `code` - string - `GTIN` или `EAN` код
+- `intro` - string - краткое описание
+- `template` - string - индивидуальный шаблон страницы товара
 - `mod_id` - integer - id товара родителя объединяющего несколько товаров в группу
 - `complect_id` - integer - входит в комплект `product_id` или нет `0`
 - `priority` - integer - приоритет искусственно поднимает в выдаче
 - `authorize` - integer - товар только для зарегистрированных пользователей
-- `alias` - integer - алиас
+- `alias` - string - алиас
 - `state` - integer - статус
-- `publish_beg` - datetime - дата включения
-- `publish_end` - datetime - дата выключения
-- `created` - datetime - дата создания
+- `publish_beg` - string - дата включения
+- `publish_end` - string - дата выключения
+- `created` - string - дата создания
 - `score` - integer - количество запросов
 ### `product` schema - структура таблицы
 ```json
@@ -46,9 +46,9 @@
 "authorize": "integer",
 "alias": "integer",
 "state": "integer",
-"publish_beg": "datetime",
-"publish_beg": "datetime",
-"created": "datetime",
+"publish_beg": "string",
+"publish_beg": "string",
+"created": "string",
 "score": "string"
 }
 ```
