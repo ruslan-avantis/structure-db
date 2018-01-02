@@ -2,6 +2,7 @@
 ## price - Таблица цен
 - `id` - integer - технический id
 - `price_id` - integer - основной id
+- `template` - string - индивидуальный шаблон страницы товара
 - `site_id` - integer - id сайта
 - `product_id` - integer - id товара
 - `category_id` - integer - id категории
@@ -23,6 +24,7 @@
 ```json
 {
 "price_id": "integer",
+"template": "string",
 "site_id": "integer",
 "product_id": "integer",
 "category_id": "integer",
@@ -37,8 +39,8 @@
 "supplier_item_id": "integer",
 "alias": "string",
 "state": "integer",
-"created": "datetime",
-"modified": "datetime",
+"created": "string",
+"modified": "string",
 "score": "string"
 }
 ```
