@@ -31,20 +31,25 @@
  
 Используется функция [gettype](http://php.net/manual/ru/function.gettype.php) — Возвращает тип переменной
 
-### Параметр `relations`
-`relations` - Очень важный параметр запроса позволяющий получать в ответе необходимые данные из других связанных ресурсов.
+### Параметр [`relations`](https://github.com/pllano/APIS-2018/blob/master/structure/relations.md)
+[`relations`](https://github.com/pllano/APIS-2018/blob/master/structure/relations.md) - Очень важный параметр запроса позволяющий получать в ответе необходимые данные из других связанных ресурсов.
+ 
+Для передачи дополнительных параметров в `json` формате с последующим кодированием данных в формат MIME base64 функцией base64_encode
+ 
+Параметры: Название связаного ресурса равно `"all"` или строка с параметрами
 
-Используется четыри символа: `'` `.` `,` `:`
+В нашем запросе к ресурсу мы хотим дополнительно получить: 
+- `product` - товары в заказе
+- `user` - данные покупателя
+- `address` -  данные адреса покупателя
 
-Сами ресурсы перечисляем через точку `'product'.'user'.'user_data'.'address'` экранируя одинарными кавычками
-```
-"relations" => "'product'.'user'.'user_data'.'address'"
-```
-
-Если необходимо запросить конкретные данные указываем их через двоеточие `'user:phone'` если нужно несколько через запятую `'product:type_id,brand_id,serie_id,articul'`
-
-```
-"relations" => "'product:type_id,brand_id,serie_id,articul'.'user:phone'.'address:street_id'"
+### Пример формирования параметра `relations`
+``` php
+"relations" => base64_encode('{
+    "product": "all",
+    "user": ["phone","email","fname","iname","oname"],
+    "address": "all"
+}')
 ```
 
 ## Структура базы состоит из 24 основных ресурсов
