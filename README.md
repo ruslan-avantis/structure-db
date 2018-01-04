@@ -80,6 +80,9 @@
 #### Контент
 - [`article`](https://github.com/pllano/db.json/blob/master/db/article.md) - Статьи
 - [`article_category`](https://github.com/pllano/db.json/blob/master/db/article_category.md) - Категории статей
+#### Технические
+- [`cached`](https://github.com/pllano/db.json/blob/master/db/cached.md) - Кеш
+- [`queue`](https://github.com/pllano/db.json/blob/master/db/queue.md) - Очередь запросов
 
 ## В разработке еще 70+ дополнительных ресурсов
 #### Глобальные
