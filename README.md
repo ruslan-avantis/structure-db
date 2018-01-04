@@ -23,13 +23,21 @@
 ### Использование в API Shop
 - Скачайте файл [db.json](https://github.com/pllano/db.json/blob/master/db.json) отредактируйте его если вы хотите внести свои дополнения.
 - Скопируйте файл в папку `ваша_бд`/`core`/ и база данных [api-json-db](https://github.com/pllano/api-json-db) или [API Shop](https://github.com/pllano/api-shop) автоматически создаст новые ресурсы.
+
 ### Поддерживаемые типы данных в db.json
 - `boolean` — Логический тип `true` или `false`
 - `integer` — Целое число
 - `double` — Число с плавающей точкой
 - `string` — Строка
- 
+
 Используется функция [gettype](http://php.net/manual/ru/function.gettype.php) — Возвращает тип переменной
+
+### Мы используем два id. Зачем ?
+Например ресурс `user` имеет `id` и `user_id`
+
+Ответ очень прост
+
+db.json проектируется с учетом того что данные будут приходить из API сторонних платформ и ресурсов. Таким образом при создании новых записей в ресурсе `id` будет локальным и иметь свою очередность, а `user_id` будет приходить извне и через него будут связаны данные в базе.
 
 ### Параметр [`relations`](https://github.com/pllano/APIS-2018/blob/master/structure/relations.md)
 [`relations`](https://github.com/pllano/APIS-2018/blob/master/structure/relations.md) - Очень важный параметр запроса позволяющий получать в ответе необходимые данные из других связанных ресурсов.
