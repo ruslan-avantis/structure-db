@@ -8,53 +8,17 @@
 			"uri": "string",
 			"type": "string",
 			"param": "string",
-			"created": "datetime"
+			"created": "string"
 		}
 	}, {
 		"table": "language",
 		"action": "create",
 		"schema": {
-			"language_id": "integer",
-			"name": "string",
-			"site_id": "integer",
-			"state": "integer",
-			"score": "integer"
-		}
-	}, {
-		"table": "localization",
-		"action": "create",
-		"schema": {
-			"localization_id": "integer",
-			"language_id": "integer",
-			"site_id": "integer",
 			"state": "integer",
 			"en": "string",
 			"ua": "string",
 			"ru": "string",
-			"be": "string",
-			"kk": "string",
-			"ka": "string",
-			"de": "string",
-			"fr": "string",
-			"pl": "string",
-			"it": "string",
-			"es": "string",
-			"tr": "string",
-			"ar": "string",
-			"hi": "string",
-			"bn": "string",
-			"pt": "string",
-			"jp": "string",
-			"score": "integer"
-		},
-		"relations": {
-			"user": {
-				"type": "belongsTo",
-				"keys": {
-					"local": "language_id",
-					"foreign": "language_id"
-				}
-			}
+			"de": "string"
 		}
 	}, {
 		"table": "category",
@@ -213,7 +177,7 @@
 			"site_id": "integer",
 			"table_name": "string",
 			"unit_id": "integer",
-			"text": "text",
+			"text": "string",
 			"sort": "integer",
 			"state": "integer",
 			"score": "integer"
@@ -246,8 +210,8 @@
 			"supplier_item_id": "integer",
 			"alias": "string",
 			"state": "integer",
-			"created": "datetime",
-			"modified": "datetime",
+			"created": "string",
+			"modified": "string",
 			"score": "integer"
 		},
 		"relations": {
@@ -354,7 +318,7 @@
 			"course": "double",
 			"course_br": "double",
 			"course_ar": "double",
-			"modified": "datetime",
+			"modified": "string",
 			"score": "integer"
 		}
 	}, {
@@ -423,8 +387,8 @@
 			"payment_system": "string",
 			"sign": "string",
 			"sum": "double",
-			"date": "datetime",
-			"created": "datetime",
+			"date": "string",
+			"created": "string",
 			"alias": "string",
 			"state": "integer",
 			"score": "integer"
@@ -458,7 +422,7 @@
 			"og_id": "integer",
 			"image_id": "integer",
 			"alias": "string",
-			"created": "datetime",
+			"created": "string",
 			"sort": "integer",
 			"state": "integer",
 			"score": "integer"
@@ -482,7 +446,7 @@
 			"og_id": "integer",
 			"image_id": "integer",
 			"alias": "string",
-			"created": "datetime",
+			"created": "string",
 			"sort": "integer",
 			"state": "integer",
 			"score": "integer"
@@ -506,9 +470,9 @@
 			"authorize": "integer",
 			"alias": "integer",
 			"state": "integer",
-			"publish_beg": "datetime",
-			"publish_beg": "datetime",
-			"created": "datetime",
+			"publish_beg": "string",
+			"publish_beg": "string",
+			"created": "string",
 			"score": "integer"
 		},
 		"relations": {
