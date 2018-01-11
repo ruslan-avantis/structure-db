@@ -4,6 +4,7 @@
 - `install_templates_list_id` - integer - основной id
 - `title` - string - название шаблона
 - `keywords` - string - массив с ключевыми словами
+- `kategorie` - string - категория
 - `description` - string - полное описание шаблона
 - `note` - string - краткое описания шаблона
 - `image` - string - картинка шаблона
@@ -19,6 +20,7 @@
     "install_templates_list_id": "integer",
     "title": "string",
     "keywords": "string",
+    "kategorie": "string",
     "description": "string",
     "note": "string",
     "image": "string",
