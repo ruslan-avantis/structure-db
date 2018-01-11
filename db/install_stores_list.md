@@ -1,18 +1,12 @@
 # Список типов магазинов
 ## install_stores_list - Категории товара
 - `id` - integer - технический id
-- `category_id` - integer - основной id
-- `parent_id` - integer - id родительской категории по умолчанию `0`
-- `site_id` - integer - мультисайтовость
-- `authorize` - integer - доступный всем `0` или только зарегестрированным 1
-- `only_available` - integer - =`0` выводить все товары, =1 выводить только с наличия
-- `products_limit` - integer - Товаров на страницу. По умолчанию `15`
-- `categories_template` - string - Шаблон категории. По умолчанию `default`
-- `products_template` - string - Шаблон карточки товара в списке товаров. По умолчанию `default`
+- `install_stores_list_id` - integer - основной id
+
 - `name` - string - заглавие `<h1></h1>`
 - `title` - string - выводится `<title></title>`
-- `keywords` - string - выводится `<meta name="keywords" content="">`
-- `description` - string - выводится `<meta name="description" content="">`
+- `keywords` - string - ключевые слова (типы товаров)
+- `description` - string - описание магазина
 - `image` - string - картинка категории
 - `text` - string - описания категории
 - `note` - string - краткое описания категории
@@ -26,7 +20,7 @@
 ### `install_stores_list` schema - структура таблицы
 ```json
 {
-"category_id": "integer",
+"install_stores_list_id": "integer",
 "parent_id": "integer",
 "site_id": "integer",
 "authorize": "integer",
