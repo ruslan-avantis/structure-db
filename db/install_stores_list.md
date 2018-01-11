@@ -1,5 +1,5 @@
 # Список типов магазинов
-## store_type - Категории товара
+## install_stores_list - Категории товара
 - `id` - integer - технический id
 - `category_id` - integer - основной id
 - `parent_id` - integer - id родительской категории по умолчанию `0`
@@ -23,7 +23,7 @@
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
 - `score` - integer - количество запросов
  
-### `store_type` schema - структура таблицы
+### `install_stores_list` schema - структура таблицы
 ```json
 {
 "category_id": "integer",
