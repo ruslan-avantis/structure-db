@@ -7,6 +7,8 @@
 - `description` - string - полное описание шаблона
 - `note` - string - краткое описания шаблона
 - `image` - string - картинка шаблона
+- `dir` - string - папка шаблона
+- `uri` - string - ссылка на дистрибутив шаблона
 - `price` - double - Цена
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
@@ -20,6 +22,8 @@
     "description": "string",
     "note": "string",
     "image": "string",
+    "dir": "string",
+    "uri": "string",
     "price": "double",
     "sort": "integer",
     "state": "integer",
