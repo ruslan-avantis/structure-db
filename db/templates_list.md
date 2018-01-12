@@ -1,7 +1,7 @@
 # Список шаблонов
-## install_templates_list
+## templates_list
 - `id` - integer - технический id
-- `install_templates_list_id` - integer - основной id
+- `templates_list_id` - integer - основной id
 - `title` - string - название шаблона
 - `keywords` - string - массив с ключевыми словами
 - `kategorie` - string - категория
@@ -14,10 +14,10 @@
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
 - `score` - integer - Популярность
-### `install_templates_list` schema - структура таблицы
+### `templates_list` schema - структура таблицы
 ```json
 {
-    "install_templates_list_id": "integer",
+    "templates_list_id": "integer",
     "title": "string",
     "keywords": "string",
     "kategorie": "string",
