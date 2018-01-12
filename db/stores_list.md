@@ -1,7 +1,7 @@
 # Список магазинов
-## install_stores_list
+## stores_list
 - `id` - integer - технический id
-- `install_stores_list_id` - integer - основной id
+- `stores_list_id` - integer - основной id
 - `title` - string - название магазина
 - `keywords` - string - массив с ключевыми словами
 - `description` - string - полное описание магазина
@@ -10,10 +10,10 @@
 - `sort` - integer - Сортировка
 - `state` - integer - Выкл. = 0 или Вкл. = `1`
 - `score` - integer - Популярность
-### `install_stores_list` schema - структура таблицы
+### `stores_list` schema - структура таблицы
 ```json
 {
-"install_stores_list_id": "integer",
+"stores_list_id": "integer",
 "title": "string",
 "keywords": "string",
 "description": "string",
