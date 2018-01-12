@@ -91,8 +91,8 @@ structure-db проектируется с учетом того что данн
 - [`cached`](https://github.com/pllano/structure-db/blob/master/db/cached.md) - Кеш
 - [`queue`](https://github.com/pllano/structure-db/blob/master/db/queue.md) - Очередь запросов
 #### Установка
-- [`install_stores_list`](https://github.com/pllano/structure-db/blob/master/db/install_stores_list.md) - Список магазинов
-- [`install_templates_list`](https://github.com/pllano/structure-db/blob/master/db/install_templates_list.md) - Список шаблонов
+- [`stores_list`](https://github.com/pllano/structure-db/blob/master/db/stores_list.md) - Список магазинов
+- [`templates_list`](https://github.com/pllano/structure-db/blob/master/db/templates_list.md) - Список шаблонов
 
 ## В разработке еще 70+ дополнительных ресурсов
 #### Глобальные
