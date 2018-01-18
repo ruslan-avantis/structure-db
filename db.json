@@ -1,34 +1,5 @@
 [
     {
-        "table": "install_stores_list",
-        "action": "create",
-        "schema": {
-            "install_stores_list_id": "integer",
-            "title": "string",
-            "keywords": "string",
-            "description": "string",
-            "note": "string",
-            "image": "string",
-            "sort": "integer",
-            "state": "integer",
-            "score": "integer"
-        }
-    }, {
-        "table": "install_templates_list",
-        "action": "create",
-        "schema": {
-            "install_templates_list_id": "integer",
-            "title": "string",
-            "keywords": "string",
-            "description": "string",
-            "note": "string",
-            "image": "string",
-            "sort": "integer",
-            "price": "double",
-            "state": "integer",
-            "score": "integer"
-        }
-    }, {
         "table": "feedback",
         "action": "create",
         "schema": {
@@ -278,8 +249,8 @@
         "table": "user",
         "action": "create",
         "schema": {
-            "user_id": "string",
-            "role_id": "string",
+            "user_id": "integer",
+            "role_id": "integer",
             "login": "string",
             "password": "string",
             "email": "string",
