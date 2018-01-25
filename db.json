@@ -450,7 +450,6 @@
 			"title": "string",
 			"alias": "string",
 			"alias_id": "string",
-			"category_id": "integer",
 			"title_ru": "string",
 			"title_ua": "string",
 			"title_de": "string",
