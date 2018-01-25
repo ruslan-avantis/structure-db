@@ -53,22 +53,9 @@
 			"score": "integer"
 		}
 	}, {
-		"table": "feedback",
-		"action": "create",
-		"demo_data": "none",
-		"schema": {
-			"feedback_id": "integer",
-			"title": "string",
-			"description": "string",
-			"uri": "string",
-			"type": "string",
-			"param": "string",
-			"created": "string"
-		}
-	}, {
 		"table": "language",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": "https://cdn.pllano.com/demo_data/db",
 		"schema": {
 			"state": "integer",
 			"en": "string",
@@ -284,7 +271,7 @@
 	}, {
 		"table": "user",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": "https://cdn.pllano.com/demo_data/db",
 		"schema": {
 			"user_id": "string",
 			"role_id": "string",
@@ -503,7 +490,7 @@
 	}, {
 		"table": "article",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": "https://cdn.pllano.com/demo_data/db",
 		"schema": {
 			"article_id": "integer",
 			"title": "string",
