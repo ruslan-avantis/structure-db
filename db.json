@@ -597,7 +597,6 @@
 			"alias": "integer",
 			"state": "integer",
 			"publish_beg": "string",
-			"publish_beg": "string",
 			"created": "string",
 			"score": "integer"
 		},
