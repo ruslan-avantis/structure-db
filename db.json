@@ -1,7 +1,7 @@
 [{
 		"table": "stores_list",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"stores_list_id": "integer",
 			"title": "string",
@@ -25,7 +25,7 @@
 	}, {
 		"table": "templates_list",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"template_id": "integer",
 			"alias": "string",
@@ -66,7 +66,7 @@
 	}, {
 		"table": "type",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"type_id": "integer",
 			"title": "string",
@@ -100,7 +100,7 @@
 	}, {
 		"table": "brand",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"brand_id": "integer",
 			"title": "string",
@@ -116,7 +116,7 @@
 	}, {
 		"table": "serie",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"serie_id": "integer",
 			"brand_id": "integer",
@@ -140,7 +140,7 @@
 	}, {
 		"table": "image",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"image_id": "integer",
 			"site_id": "integer",
@@ -164,7 +164,7 @@
 	}, {
 		"table": "seo",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"seo_id": "integer",
 			"site_id": "integer",
@@ -194,7 +194,7 @@
 	}, {
 		"table": "description",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"description_id": "integer",
 			"site_id": "integer",
@@ -217,7 +217,7 @@
 	}, {
 		"table": "price",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"price_id": "integer",
 			"site_id": "integer",
@@ -249,7 +249,7 @@
 	}, {
 		"table": "role",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"role_id": "integer",
 			"name": "string",
@@ -293,7 +293,7 @@
 	}, {
 		"table": "contact",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"contact_id": "integer",
 			"site_id": "integer",
@@ -309,7 +309,7 @@
 	}, {
 		"table": "address",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"contact_id": "integer",
 			"site_id": "integer",
@@ -334,7 +334,7 @@
 	}, {
 		"table": "currency",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"currency_id": "integer",
 			"state": "integer",
@@ -352,7 +352,7 @@
 	}, {
 		"table": "order",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"order_id": "integer",
 			"site_id": "integer",
@@ -379,7 +379,7 @@
 	}, {
 		"table": "cart",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"cart_id": "integer",
 			"site_id": "integer",
@@ -408,7 +408,7 @@
 	}, {
 		"table": "pay",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"pay_id": "integer",
 			"site_id": "integer",
@@ -443,7 +443,7 @@
 	}, {
 		"table": "category",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"category_id": "integer",
 			"parent_id": "integer",
@@ -539,7 +539,7 @@
 	}, {
 		"table": "article_category",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"article_category_id": "integer",
 			"parent_id": "integer",
@@ -579,7 +579,7 @@
 	}, {
 		"table": "product",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"product_id": "integer",
 			"type_id": "integer",
@@ -626,7 +626,7 @@
 	}, {
 		"table": "site",
 		"action": "create",
-		"demo_data": "none",
+		"demo_data": null,
 		"schema": {
 			"state": "integer",
 			"site_id": "integer",
