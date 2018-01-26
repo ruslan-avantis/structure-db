@@ -443,7 +443,7 @@
     }, {
         "table": "category",
         "action": "create",
-        "demo_data": null,
+        "demo_data": "https://cdn.pllano.com/demo_data/db",
         "schema": {
             "category_id": "integer",
             "parent_id": "integer",
