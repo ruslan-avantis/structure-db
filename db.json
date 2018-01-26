@@ -448,6 +448,8 @@
             "category_id": "integer",
             "parent_id": "integer",
             "site_id": "integer",
+			"menu": "integer",
+			"list": "integer",
             "authorize": "integer",
             "only_available": "integer",
             "products_limit": "integer",
